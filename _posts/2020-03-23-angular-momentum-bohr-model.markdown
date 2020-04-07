@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "Origin of Angular Momentum Quantization in Bohr's Model of Hydrogen Atom"
 date:   2020-03-23 18:10:00 +0530
 tags: [nature, physics]
