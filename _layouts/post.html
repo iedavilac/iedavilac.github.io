@@ -22,14 +22,13 @@
 										<li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
 									</ul>
 								</header>
-
-
-							<!-- Section -->
-								
-                  						<h2 class="post-head">{{ page.title }}</h2>
-                  						<p class="post-date">Published {{ page.date | date: "%B %d, %Y" }}</p>
-								{{content}}
-								
+							<section>
+								<header class="main">
+									<h1>{{post.title}}</h1>
+								</header>
+								<p class="post-date">Published {{ page.date | date: "%B %d, %Y" }}</p>
+									{{content}}
+								</section>	
 						</div>
 					</div>
 
