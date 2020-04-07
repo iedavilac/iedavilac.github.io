@@ -4,6 +4,8 @@
 <body class="is-preload">
 
 	<section>
+		<h2 class="post-head">{{post.title}}</h2>
+		<p class="post-date">Published {{ page.date | date: "%B %d, %Y" }}</p>
 		{{content}}
 	</section>
 
