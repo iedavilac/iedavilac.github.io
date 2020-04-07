@@ -1,0 +1,12 @@
+@mixin flexalign($main, $cross) {
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-align-items: $cross;
+  align-items: $cross;
+
+  -webkit-justify-content: $main;
+  justify-content: $main;
+}
+
+

@@ -1,0 +1,254 @@
+---
+---
+
+/* Colors! */
+@import 'colors.scss';
+
+/* Fonts */
+@import 'fonts.scss';
+
+/* Mixins */
+@import 'mixins.scss';
+
+/* Sass starts here! */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: $sans;
+  font-size: 10px;
+}
+
+body {
+  font-size: $base-font-size;
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 75rem;
+  padding: 3rem 3rem 0;
+
+  & > * {
+    margin-bottom: 2.4rem;
+  }
+
+}
+
+h2.post-head {
+  margin: unset;
+}
+
+img,
+video {
+  float: right;
+  margin-left: 1.6rem;
+  width: 24%;
+}
+
+figure {
+  img,
+  video {
+    display: block;
+    float: unset;
+    margin: auto;
+    width: 45%;
+  }
+
+  figcaption {
+    font-size: $small-font-size;
+    text-align: center;
+
+    &::before {
+      content: "Figure: ";
+    }
+  }
+}
+
+p {
+  &.post-date {
+    color: $grey;
+    font-style: italic;
+    text-align: right;
+  }
+}
+
+code {
+  border: 0.1px solid $offwhite;
+  border-radius: .4rem;
+  box-shadow: 0 0 .1rem $grey;
+  display: inline-block;
+  font-family: $mono;
+  font-size: $small-font-size;
+  padding: 0;
+
+  pre > & {
+    display: block;
+    overflow-y: scroll;
+    padding: .4rem 1.4rem;
+  }
+}
+
+
+blockquote {
+  border-left: 0.5rem solid $offwhite;
+  color: $grey;
+  padding: .6rem 0 .6rem 1.8rem;
+
+  cite {
+    border-left: unset;
+    display: block;
+    text-align: right;
+    
+    &::before {
+      content: " — ";
+    }
+  }
+}
+
+header {
+  h1 {
+    font-size: $large-font-size;
+    font-weight: normal;
+  }
+
+  nav {
+    ul {
+      text-align: right;
+      list-style: none;
+
+      li {
+        display: inline-block;
+        padding-left: 1rem;
+      }
+
+    }
+  }
+}
+
+main {
+  & > * {
+    margin-bottom: 2.4rem;
+  }
+
+  ul,
+  ol {
+    margin-left: 3.6rem;
+  }
+
+  hr {
+    color: $offwhite;
+    margin: 0 auto;
+    margin-bottom: 1.4rem;
+    width: 75%;
+  }
+}
+
+article {
+  display: flex;
+
+  .date {
+    color: $grey;
+    display: flex;
+    flex: 1;
+    font-size: $small-font-size;
+    font-style: italic;
+    padding-right: 1.6rem;
+    text-align: right;
+
+    @include flexalign(right, flex-start);
+  }
+
+  .detail {
+    flex: 3;
+
+    h2 {
+      display: inline;
+      font-size: $base-font-size;
+      font-style: italic;
+      font-weight: normal;
+
+      &::after {
+        content: " — ";
+      }
+    }
+
+    p {
+      display: inline;
+    }
+  }
+}
+
+a {
+  display: inline;
+  outline: none;
+  text-decoration: none;
+
+  &:link {
+    color: $red;
+  }
+
+  &:visited {
+    color: $peach;
+  }
+
+  &:focus {
+    text-decoration: none;
+    color: $peach;
+  }
+
+  &:hover,
+  &:active {
+    border-bottom: .1rem solid;
+    text-decoration: none;
+  }
+}
+
+footer {
+  color: $grey;
+  text-align: right;
+
+  a {
+    text-decoration: underline;
+
+    &:link,
+    &:visited {
+      color: $grey;
+    }
+
+    &:focus,
+    &:hover,
+    &:active {
+      text-decoration: none;
+      border-bottom: unset;
+    }
+  }
+}
+
+/* begin: make footer stick to the bottom */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  flex-shrink: 0;
+  margin-bottom: unset;
+  padding-bottom: 2.4rem;
+}
+/* end: make footer stick to the bottom */
+
+.mjx-chtml {
+  font-size: 110% !important;
+}
