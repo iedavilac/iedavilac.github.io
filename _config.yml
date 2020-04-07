@@ -13,22 +13,13 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Ayush Singh's Blog
-email: ayush.singh@niser.ac.in
+title: What I learn on the way
+email: isaiemanu123@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-    Ayush Singh's thoughts on math, music, books, and nature.
+    Physics, Maths and Programming.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  11DE784A
-
-
-# Books I am currently reading
-currentbooks:
-  - title: The Man in the High Castle
-    author: Philip K. Dick
-
-  - title: India After Gandhi
-    author: Ramchandra Guha
+github_username:  QuantumOfVacuum
 
         
 # Build settings
