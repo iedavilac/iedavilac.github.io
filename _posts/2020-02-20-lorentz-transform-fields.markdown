@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default2
 title:  "Electromagnetic Fields and Arbitrary Lorentz Transformations"
 date:   2020-02-20 17:00:00 +0530
 tags: [nature, physics]
