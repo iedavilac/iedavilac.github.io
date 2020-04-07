@@ -50,6 +50,14 @@ h2.post-head {
   margin: unset;
 }
 
+p {
+  &.post-date {
+    color: $grey;
+    font-style: italic;
+    text-align: right;
+  }
+}
+
 mark {
   background-color: transparent;
   color: inherit; }
