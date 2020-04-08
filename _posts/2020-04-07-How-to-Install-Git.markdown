@@ -1,10 +1,9 @@
+---
 layout: default2
 title:  "How to Install Git on Windows"
 date:   2020-04-07 18:10:00 +0530
 tags: [programming]
-
 excerpt: En este post voy a detallar como instalar Git en Windows .
-
 ---
 En este post detallo como comencé a usar Git en Windows para añadir *commits* a este [blog personal](https://quantumofvacuum.github.io/).
 
