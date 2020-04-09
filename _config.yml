@@ -23,7 +23,7 @@ github_username:  QuantumOfVacuum
 
         
 # Build settings
-markdown: CommonMarkGhPages
+markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-archives
