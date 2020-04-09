@@ -4,12 +4,11 @@ title: "Clifford Algebra and SO(2n) representations"
 date: 2020-04-08
 excerpt: In this post I review Spinor representations of SO(2n). Also, we treat Clifford algebra generators and its connection with orthogonal groups.
 tags: [math,physics]
-
 ---
 
-# Spinor Representations
+## Spinor Representations
 
-## Clifford Algebra
+### Clifford Algebra
 
 Comenzamos asegurando la existencia de $2n$  matrices hermíticas $\gamma_i$ con $i=1,2,\cdots,2n$ que satisfacen:
 $$
@@ -69,7 +68,7 @@ I & 0\end{matrix}\right) \\
 iI & 0\end{matrix}\right)
 $$
 
-## Representando generadores de $SO(2n)$
+### Representando generadores de $SO(2n)$
 
 ¿Cómo la representación antes vista del álgebra de Clifford se relaciona con el grupo de rotaciones $SO(2n)$?
 
