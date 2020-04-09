@@ -11,7 +11,7 @@ tags: [math,physics]
 
 ## Clifford Algebra
 
-Comenzamos asegurando la existencia de $2n$  matrices hermíticas $\gamma_i$ con $i=1,2,\cdots,2n$ que satisfacen:
+Comenzamos asegurando la existencia de $2n$  matrices hermíticas $$\gamma_i$$ con $$ i=1,2,\cdots,2n $$ que satisfacen:
 $$
 {\gamma_i,\gamma_j}=2\delta_{ij}I
 $$
