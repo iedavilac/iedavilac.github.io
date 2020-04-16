@@ -1,12 +1,11 @@
 ---
 layout : default
-permalink : "/physics_stuff/"
 ---
 
 <h1> {{ page.title}} </h1>
 
-
-	{% for post in site.tags.physics %}
+{% if site.tags[page.tag]=="physics" %}
+	{% for post in site.tags[page.tag]" %}
 		<div class="posts">
 			<article>
 				<div class="date">
@@ -20,3 +19,4 @@ permalink : "/physics_stuff/"
 			</article>
 		</div>
 	{% endfor %}
+{% endif %}
