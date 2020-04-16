@@ -8,6 +8,12 @@
 		<a href="/" class="logo"><strong>Physics, Math , Programming and History</strong> by QuantumOfVacuum</a>
 		</header>
 		<h2 class="post-head">{{ page.title }}</h2>
+		<span>[
+			{% for tag in page.tags %}
+				{% capture tag_name %}{{ tag }}{% endcapture %}
+			<a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
+			{% endfor %}
+]		</span>
 		<p class="post-date">Published {{ page.date | date: "%B %d, %Y" }}</p>
 		{{content}}
 	</section>
