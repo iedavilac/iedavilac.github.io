@@ -25,7 +25,7 @@ Una de las formas más conocidas de espacios topológicos es dotar a cierto conj
 
 
 
-> **Definición (Métrica): ** Una métrica en $X$ es una función $d: X\times X\to \R_{\geq 0}$  que verifica :
+> <b>Definición (Métrica): </b>  Una métrica en $X$ es una función $d: X\times X\to \R_{\geq 0}$  que verifica :
 >
 > 1. $$d(x,y)=d(y,x)$$ . d es simétrica en sus argumentos.
 > 2. $$d(x,y)=0\iff x=y$$ 
@@ -40,6 +40,12 @@ Decimos que un conjunto $$A\subseteq X $$ es $$d$$-abierto si para todo $$x\in A
 Ahora, podemos ver que el sistema de conjuntos $$\tau_d=\{A\subseteq X: A \ \text{es d-abierto}\}$$ es una topología en $$X$$.
 
 
+
+> <b>  Definición(Entornos): </b>  Sea $$(X,\tau)$$ un espacio topológico y sea $$x\in X$$ un punto fijo:
+>
+> 1. Diremos que $$A\subseteq X$$ es un <b> entorno </b> de $$x$$ si existe $$U\in \tau$$ tal que $$x\in U\subseteq A$$.
+>
+>    Diremos que $$A$$ es un <b> entorno abierto </b> de $$x$$ si $$A\in \tau.$$
 
 
 
