@@ -25,11 +25,15 @@ Una de las formas más conocidas de espacios topológicos es dotar a cierto conj
 
 
 
-> <b>Definición (Métrica): </b>  Una métrica en $X$ es una función $d: X\times X\to \R_{\geq 0}$  que verifica :
+
+
+> <b>Definición (Métrica): </b>  Una métrica en $$X$$ es una función $$d: X\times X\to \R_{\geq 0}$$  que verifica :
 >
 > 1. $$d(x,y)=d(y,x)$$ . d es simétrica en sus argumentos.
 > 2. $$d(x,y)=0\iff x=y$$ 
 > 3. $$d(x,y)\leq d(x,z)+d(z,y)$$. Desigualdad triangular.
+
+
 
 
 
@@ -41,11 +45,19 @@ Ahora, podemos ver que el sistema de conjuntos $$\tau_d=\{A\subseteq X: A \ \tex
 
 
 
+
+
 > <b>  Definición(Entornos): </b>  Sea $$(X,\tau)$$ un espacio topológico y sea $$x\in X$$ un punto fijo:
 >
-> 1. Diremos que $$A\subseteq X$$ es un <b> entorno </b> de $$x$$ si existe $$U\in \tau$$ tal que $$x\in U\subseteq A$$.
+> 1. Diremos que $$A\subseteq X$$ es un <b> entorno </b> de $$x$$ si existe $$U\in \tau$$ tal que $$x\in U\subseteq A$$. Diremos que $$A$$ es un <b> entorno abierto </b> de $$x$$ si $$A\in \tau$$.
 >
->    Diremos que $$A$$ es un <b> entorno abierto </b> de $$x$$ si $$A\in \tau.$$
+> 2. Denotaremos $$O(x)=\{ A\subseteq X: A \ \text{es un entorno de x}\}$$ al <b> filtro </b> de entornos de $$x$$. Llamaremos $$O^a(x)=\{ A\subseteq O(x): A \ \text{es un entorno abierto de} \ x \}=O(x)\cap\tau$$.
+>
+> 3. Dado $$Y\subseteq X$$, denotamos a $$Y^°=\{ x\in Y: Y\in O(x) \}$$ como el <b> interior </b> de $$Y$$.
+>
+>    
+
+
 
 
 
