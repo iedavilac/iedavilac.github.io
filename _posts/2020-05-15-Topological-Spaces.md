@@ -59,5 +59,16 @@ Ahora, podemos ver que el sistema de conjuntos $$\tau_d=\{A\subseteq X: A \ \tex
 
 
 
+Ahora, veamos algunas propiedades fundamentales acerca del interior de un conjunto:
 
+
+
+> <b> Algunas propiedades </b> : Sean $$(X,\tau)$$ un espacio topológico y $$A,B\subseteq X$$.
+>
+> 1. $$A^°$$ es abierto.
+> 2. Si $$A\subseteq B$$ entonces $$A^°\subseteq B^°$$.
+> 3. $$A$$ es abierto $$\iff A=A^°$$.
+> 4. $$(A^°)^°=A^°$$.
+> 5. $$A^°$$ es el <b> mayor </b> abierto contenido en $$A$$.
+> 6. $$(A\cap B)^°=A^°\cap B^°$$.
 
