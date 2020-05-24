@@ -57,11 +57,11 @@ Ahora, podemos ver que el sistema de conjuntos $$\tau_d=\{A\subseteq X: A \ \tex
 >
 >    
 
-
+<p> </p> 
 
 Ahora, veamos algunas propiedades fundamentales acerca del interior de un conjunto:
 
-
+<p> </p> 
 
 > <b> Algunas propiedades </b> : Sean $$(X,\tau)$$ un espacio topológico y $$A,B\subseteq X$$.
 >
