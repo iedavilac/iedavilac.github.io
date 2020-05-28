@@ -1,5 +1,5 @@
 ---
-layout: default2
+7layout: default2
 title: "Topological Spaces"
 date: 2020-05-15
 excerpt: This is the first in a series of post about certain topics of Topology.In this post we treat one of the biulding blocks of Mathematics, that it, Topological Spaces.
@@ -45,8 +45,6 @@ Ahora, podemos ver que el sistema de conjuntos $$\tau_d=\{A\subseteq X: A \ \tex
 
 
 
-
-
 > <b>  Definición(Entornos): </b>  Sea $$(X,\tau)$$ un espacio topológico y sea $$x\in X$$ un punto fijo:
 >
 > 1. Diremos que $$A\subseteq X$$ es un <b> entorno </b> de $$x$$ si existe $$U\in \tau$$ tal que $$x\in U\subseteq A$$. Diremos que $$A$$ es un <b> entorno abierto </b> de $$x$$ si $$A\in \tau$$.
@@ -72,3 +70,22 @@ Ahora, veamos algunas propiedades fundamentales acerca del interior de un conjun
 > 5. $$A^°$$ es el <b> mayor </b> abierto contenido en $$A$$.
 > 6. $$(A\cap B)^°=A^°\cap B^°$$.
 
+
+
+**Demostración**: Sea $$x\in A^°$$ y sea $$U$$ un abierto de la topología $$\tau$$ tal que $$x\in U \subseteq A$$. Se puede ver que para todo $$y\in U, y\neq x$$ el conjunto $$A$$ es un entorno de estos puntos, es decir, $$A\in O(y)$$. O sea, acabamos de probar que todo elemento de $$U$$ pertenece a $$A$$ y que $$A\in O(y)$$, por lo que por definición de interior , $$U\subseteq A^°$$. Esto permite deducir que 
+$$
+A^°=\bigcup\{U\in\tau: U\subseteq A\}
+$$
+
+
+Con esto podemos demostrar las primeras cinco propiedades:
+
+1. **$$A^°$$ es abierto**: Esto es evidente y sigue de ecuación (1). La unión finita (o infinita) de conjuntos abiertos es un conjunto abierto.
+2. **Si $$A\subseteq B$$ entonces $$A^°\subseteq B^°$$**: Sea $$U\in\tau$$ tal que $$U\subseteq A$$, entonces se sigue que $$U\subseteq B$$. Por lo que $$U\subseteq B^°$$. Así, si escogemos un elemento cualquiera de $$U$$ veremos que es elemento del interior de $$B$$ y a su vez ese elemento está dentro del interior de $$A$$.
+3. **$$A$$ es abierto $$\iff A=A^°$$** : 
+4. **$$(A^°)^°=A^°$$**: Es evidente.
+5. **$$A^°$$ es el <b> mayor </b> abierto contenido en $$A$$** : Es evidente, ya que por la ecuación (1) es la unión de todos los subconjuntos contenidos en $$A$$.
+
+
+
+### Conjuntos cerrados
