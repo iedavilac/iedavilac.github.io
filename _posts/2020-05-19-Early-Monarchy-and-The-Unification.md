@@ -17,7 +17,7 @@ Los reyes posiblemente vivieron en *Pe*, al noroeste del Delta, y en *Nekhen (Hi
 
 
 Muy cerca de Pe estaba la ciudad de Dep, donde se encontraba un templo que adoraba a la diosa cobra **Uadjit**(Edjo). Luego, en el *Nuevo Reino*, ambas ciudades fueron llamadas **Per-Uadjit** (Casa de Edjo), luego llamada *Buto* por los griegos.
-Cruzando el rio desde Nekhen se encontraba la ciudad de **Nekheb** (El-Kab) donde la diosa buitre **Nekhbet** tenia su santuario. Ambas diosas eran consideradas protectoras reales(ver +@fig:nekhwad).
+Cruzando el rio desde Nekhen se encontraba la ciudad de **Nekheb** (El-Kab) donde la diosa buitre **Nekhbet** tenia su santuario. Ambas diosas eran consideradas protectoras reales(ver figura abajo).
 
 
 
@@ -29,4 +29,4 @@ Cruzando el rio desde Nekhen se encontraba la ciudad de **Nekheb** (El-Kab) dond
 
 Manethon habla de los *Espíritus de los muertos, los semidioses* como los ancestros de los reyes de la Primera Dinastía.
 
-Sólo dos reyes pre-dinásticos se conocen hasta la fecha ambos del Alto Egipto, uno que lleva el nombre de Ka y el otro es indicado por el símbolo del escorpión. 
+Sólo dos reyes pre-dinásticos se conocen hasta la fecha ambos del Alto Egipto, uno que lleva el nombre de Ka y el otro es indicado por el símbolo jeroglífico del escorpión. 
