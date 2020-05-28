@@ -1,5 +1,5 @@
 ---
-7layout: default2
+layout: default2
 title: "Topological Spaces"
 date: 2020-05-15
 excerpt: This is the first in a series of post about certain topics of Topology.In this post we treat one of the biulding blocks of Mathematics, that it, Topological Spaces.
