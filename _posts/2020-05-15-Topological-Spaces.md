@@ -13,11 +13,13 @@ tags: [math]
 
 Un espacio topológico, denotado por $$(E,\tau)$$, es un conjunto $$E$$ imbuido de una colección de subconjuntos llamados **subconjuntos abiertos**  $$\tau$$ que cumplen estas propiedades:
 
-<br></br> 
+<br> 
 
 1. $$E\in \tau$$ y $$\emptyset\in \tau$$.
 2. Para $$O_i\in \tau$$, $$\cup_i O_i\in \tau$$. Las uniones podrían ser incluso infinitas.
 3. $$\cap O_i\in \tau$$.  Cuidado, solo se permiten las intersecciones **finitas**.
+
+<br>
 
 A $$\tau$$ se le denomina la **topología de $$E$$**.  Colecciones de subconjuntos distintos definen distintas topologías, pero algunas pueden ser equivalentes.
 
@@ -25,9 +27,7 @@ Pueden haber muchas topologías definidas en un mismo conjunto, pero siempre se 
 
 Una de las formas más conocidas de espacios topológicos es dotar a cierto conjunto $$X$$ de una métrica.
 
-
-
-
+<br>
 
 > <b>Definición (Métrica): </b>  Una métrica en $$X$$ es una función $$d: X\times X\to \R_{\geq 0}$$  que verifica :
 >
@@ -37,7 +37,7 @@ Una de las formas más conocidas de espacios topológicos es dotar a cierto conj
 
 
 
-
+<br>
 
 Veamos como surge una topologia de manera natural al dotar de una métrica a un conjunto. Primero hace falta definir como serán los subconjuntos abiertos.
 
@@ -45,7 +45,7 @@ Decimos que un conjunto $$A\subseteq X $$ es $$d$$-abierto si para todo $$x\in A
 
 Ahora, podemos ver que el sistema de conjuntos $$\tau_d=\{A\subseteq X: A \ \text{es d-abierto}\}$$ es una topología en $$X$$.
 
-
+<br>
 
 > <b>  Definición(Entornos): </b>  Sea $$(X,\tau)$$ un espacio topológico y sea $$x\in X$$ un punto fijo:
 >
@@ -57,11 +57,11 @@ Ahora, podemos ver que el sistema de conjuntos $$\tau_d=\{A\subseteq X: A \ \tex
 >
 >    
 
-<p> </p> 
+<br>
 
 Ahora, veamos algunas propiedades fundamentales acerca del interior de un conjunto:
 
-<p> </p> 
+<br>
 
 > <b> Algunas propiedades </b> : Sean $$(X,\tau)$$ un espacio topológico y $$A,B\subseteq X$$.
 >
@@ -72,9 +72,9 @@ Ahora, veamos algunas propiedades fundamentales acerca del interior de un conjun
 > 5. $$A^°$$ es el <b> mayor </b> abierto contenido en $$A$$.
 > 6. $$(A\cap B)^°=A^°\cap B^°$$.
 
+<br>
 
-
-**Demostración**: Sea $$x\in A^°$$ y sea $$U$$ un abierto de la topología $$\tau$$ tal que $$x\in U \subseteq A$$. Se puede ver que para todo $$y\in U, y\neq x$$ el conjunto $$A$$ es un entorno de estos puntos, es decir, $$A\in O(y)$$. O sea, acabamos de probar que todo elemento de $$U$$ pertenece a $$A$$ y que $$A\in O(y)$$, por lo que por definición de interior , $$U\subseteq A^°$$. Esto permite deducir que 
+**DEMOSTRACIÓN**: Sea $$x\in A^°$$ y sea $$U$$ un abierto de la topología $$\tau$$ tal que $$x\in U \subseteq A$$. Se puede ver que para todo $$y\in U, y\neq x$$ el conjunto $$A$$ es un entorno de estos puntos, es decir, $$A\in O(y)$$. O sea, acabamos de probar que todo elemento de $$U$$ pertenece a $$A$$ y que $$A\in O(y)$$, por lo que por definición de interior , $$U\subseteq A^°$$. Esto permite deducir que 
 $$
 A^°=\bigcup\{U\in\tau: U\subseteq A\}
 $$
@@ -88,6 +88,6 @@ Con esto podemos demostrar las primeras cinco propiedades:
 4. **$$(A^°)^°=A^°$$**: Es evidente.
 5. **$$A^°$$ es el <b> mayor </b> abierto contenido en $$A$$** : Es evidente, ya que por la ecuación (1) es la unión de todos los subconjuntos contenidos en $$A$$.
 
-
+<br>
 
 ### Conjuntos cerrados
