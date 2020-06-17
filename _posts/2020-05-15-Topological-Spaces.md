@@ -13,6 +13,8 @@ tags: [math]
 
 Un espacio topológico, denotado por $$(E,\tau)$$, es un conjunto $$E$$ imbuido de una colección de subconjuntos llamados **subconjuntos abiertos**  $$\tau$$ que cumplen estas propiedades:
 
+<br></br> 
+
 1. $$E\in \tau$$ y $$\emptyset\in \tau$$.
 2. Para $$O_i\in \tau$$, $$\cup_i O_i\in \tau$$. Las uniones podrían ser incluso infinitas.
 3. $$\cap O_i\in \tau$$.  Cuidado, solo se permiten las intersecciones **finitas**.
