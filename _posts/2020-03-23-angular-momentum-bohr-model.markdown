@@ -69,7 +69,7 @@ In order to estimate the energy of a stationary state, we equate the Coulomb
 force on the electron and the centripetal force
 
 $$
-  \frac{e^2}{4 \pi \epsilon_0} \frac{1}{r^2} = \frac{mv^2}{r} \tag{1}
+\frac{e^2}{4 \pi \epsilon_0} \frac{1}{r^2} = \frac{mv^2}{r} \tag{1}
 $$
 
 which leads to the kinetic energy given by
