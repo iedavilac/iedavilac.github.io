@@ -94,5 +94,21 @@ Ahora veamos algunos ejemplos de bases.
 
 <br>
 
-{% include image.html url="/assets/images/closed_subsets/example_1.png" 
+{% include image.html url="/assets/images/closed_subsets/examples_1.png" 
   %}
+
+<br>
+
+Hasta ahora no verificamos que efectivamente $$\tau$$ es una topología. 
+
+Recordemos que para que una familia de conjuntos sea una topología se debían de cumplir 3 condiciones:
+
+<br>
+
+1. $$\empty$$ y $$X$$ pertenecen a la topología.
+2. La unión de elementos de la topología está en la topología.
+3. La intersección finita de elementos también está dentro de la topología.
+
+<br>
+
+Entonces, comprobemos estas tres condiciones.
