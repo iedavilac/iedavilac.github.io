@@ -15,7 +15,7 @@ tags: [math]
 
 <br>
 
-** De aquí en adelante usaremos siempre que $$(X,\tau)$$ es un espacio topológico.**
+**De aquí en adelante usaremos siempre que $$(X,\tau)$$ es un espacio topológico.**
 
 Otra forma de verlo es: $$U$$ es cerrado si $$U/X\in\tau$$.
 
@@ -90,7 +90,7 @@ Ahora veamos algunos ejemplos de bases.
 
 <br>
 
-> <b> Ejemplo 2 </b>. Sea $$\mathscr{B}^'$$ la familia de rectángulos con los lados paralelos a los ejes del plano. Se puede ver que también cumple con las propiedades de una base. En este caso, la segunda condición se cumple ya que la intersección de dos rectángulos en vacía u otro rectángulo.
+> <b> Ejemplo 2 </b>. Sea $$\mathscr{B^'}$$ la familia de rectángulos con los lados paralelos a los ejes del plano. Se puede ver que también cumple con las propiedades de una base. En este caso, la segunda condición se cumple ya que la intersección de dos rectángulos es vacía u otro rectángulo.
 
 <br>
 
@@ -105,7 +105,7 @@ Recordemos que para que una familia de conjuntos sea una topología se debían d
 
 <br>
 
-1. $$\empty$$ y $$X$$ pertenecen a la topología.
+1. El elemento vacío $$\empty$$ y $$X$$ pertenecen a la topología.
 2. La unión de elementos de la topología está en la topología.
 3. La intersección finita de elementos también está dentro de la topología.
 
