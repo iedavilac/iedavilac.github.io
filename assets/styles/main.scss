@@ -93,8 +93,8 @@ code {
 
 
 blockquote {
-  border-left: 0.1rem solid $black;
-  color: $white;
+  border-box:0.1rem solid $black
+  color: $grey;
   padding: .6rem 0 .6rem 1.8rem;
 
   cite {
