@@ -62,7 +62,7 @@ figure {
     text-align: center;
 
     &::before {
-      content: "Figure: ";
+      content: "Figura: ";
     }
   }
 }
@@ -94,7 +94,7 @@ code {
 
 blockquote {
   border-left: 0.5rem solid $offwhite;
-  color: $grey;
+  color: white;
   padding: .6rem 0 .6rem 1.8rem;
 
   cite {
