@@ -98,11 +98,10 @@ blockquote {
   border-right: 0.2rem solid $black;
   border-top: 0.2rem solid $black;
   border-bottom: 0.2rem solid $black;
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
-  border-right: 4px solid #428bca;
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
   padding: .6rem 0 .6rem 1.8rem;
   text-align: left;
   background: $offwhite;
