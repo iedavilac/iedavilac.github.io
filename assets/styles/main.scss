@@ -94,7 +94,8 @@ code {
 
 blockquote {
   border-left: 0.5rem solid $offwhite;
-  color: white;
+  border-right: 0.5rem solid $offwhite;
+  color: $gray;
   padding: .6rem 0 .6rem 1.8rem;
 
   cite {
