@@ -5,8 +5,7 @@ layout: default
 
 ## About
 
-El propósito de este blog es publicar temas de Física, Matemáticas y Programación que el autor vaya aprendiendo en el camino. Muchos dicen que la mejor forma de aprender es enseñar a otros, asi que las publicaciones tendrán un cierto carácter pedagógico. Un propósito más egoista para este blog es mantener un registro de lo que el autor aprende.
-También se subirán los reportes de laboratorio.
+El propósito de este blog es mantener un archivo de temas de Física, Matemáticas , Programación e Historia que el autor vaya aprendiendo durante los años. Muchos dicen que la mejor forma de aprender es enseñar a otros, asi que las publicaciones tendrán un cierto carácter pedagógico. 
 
 ## About the Author
 
