@@ -1941,7 +1941,7 @@ button,
   -webkit-transition: margin-left 0.5s ease, box-shadow 0.5s ease;
   -ms-transition: margin-left 0.5s ease, box-shadow 0.5s ease;
   transition: margin-left 0.5s ease, box-shadow 0.5s ease;
-  background-color: #f5f6f7;
+  background-color: #222324;
   font-size: 0.9em;
   position: relative;
   width: 26em; }
@@ -2209,10 +2209,9 @@ button,
 #menu ul {
   -moz-user-select: none;
   -webkit-user-select: none;
-  background: #1d1e1f;
   -ms-user-select: none;
   user-select: none;
-  color: #e3e4e6;
+  color: #3d4449;
   font-family: "Roboto Slab", serif;
   font-weight: 400;
   letter-spacing: 0.075em;
