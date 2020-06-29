@@ -50,7 +50,7 @@ Ahora veremos algunas propiedades de la clausura de un conjunto:
 6. **\bar{A\cup B} = \bar A\cup\bar B.**
 
    
-   
+  
    ​		
 
 <br>
@@ -90,7 +90,7 @@ Ahora veamos algunos ejemplos de bases.
 
 <br>
 
-> <b> Ejemplo 2 </b>. Sea $$\mathscr{B^'}$$ la familia de rectángulos con los lados paralelos a los ejes del plano. Se puede ver que también cumple con las propiedades de una base. En este caso, la segunda condición se cumple ya que la intersección de dos rectángulos es vacía u otro rectángulo.
+> <b> Ejemplo 2 </b>. Sea $$\mathscr{B}'$$  la familia de rectángulos con los lados paralelos a los ejes del plano. Se puede ver que también cumple con las propiedades de una base. En este caso, la segunda condición se cumple ya que la intersección de dos rectángulos es vacía u otro rectángulo.
 
 <br>
 
@@ -111,4 +111,38 @@ Recordemos que para que una familia de conjuntos sea una topología se debían d
 
 <br>
 
-Entonces, comprobemos estas tres condiciones.
+Entonces, comprobemos estas tres condiciones. Tomemos una familia de elementos de $$\tau$$ indexada como $$\{U_{\alpha} \}_\alpha$$  y mostremos que $$U=\bigcup_\alpha U_\alpha$$ pertenece a $$\tau$$.
+
+
+
+Agarremos $$x\in U$$, entonces por lógica debe existir algún índice $$\alpha$$ tal que $$x\in U_\alpha$$. Ya que todos los $$U_\alpha$$ son abierto ya que pertenecen en la topología existe un elemento de la base $$B\in\mathscr{B} $$ tal que $$x\in B\subset U_\alpha$$. Entonces, acabamos de mostrar que $$x\in B$$ y $$B\subset U_\alpha \subset U$$ , entonces por definición $$U$$ es un abierto. Por lo tanto la unión de elementos de $$\tau$$ está en $$\tau$$.
+
+<br>
+
+Ahora sean $$U_1,U_2\in \tau$$. Ahora elijamos dos elementos de la base , $$B_1\subset U_1$$ y $$B_2\subset U_2$$. Listo, ahora dado un elemento en la intersección $$x\in U_1\cap U_2$$ y por la segunda propiedad de una base existe un tercer elemento $$B_3\subset B_1\cap B_2$$ tal que $$x\in B_3$$ .   Entonces $$x\in B_3$$ y $$B_3\subset U_1\cap U_2$$ entonces la intersección es un conjunto abierto por definición. Sin embargo, no hemos terminado con la demostración: **debemos probar que esto es verdad para la intersección finita de elementos de la topología.**  Para esto usamos algo que se aprende en todo curso de Algebra en la Universidad o incluso en la secundaria = **inducción** :) .
+
+<br>
+$$
+U_1\cap U_2\cap \cdots\cap U_n \tag{2}
+$$
+<br>
+
+El caso $$n=1$$ es trivial ya que cada uno de los $$U_\alpha$$ pertenece a $$\tau$$.
+
+Ahora suponemos que $$U_1\cap U_2\cap \dots \cap U_{n-1}\in \tau$$ y probamos para el caso general $$n$$:
+
+<br>
+$$
+U_1\cap U_2\cap \cdots\cap U_n = (U_1\cap U_2\cap \dots \cap U_{n-1}) \cap U_n \tag{3}
+$$
+<br>
+
+Pero antes mostramos que la intersección de dos elementos de la topología es un elemento de la topología, entonces $$U_1\cap U_2\cap \dots \cap U_{n}\in \tau$$.
+
+<br>
+
+$$\therefore$$ $$\tau$$ generado por $$\mathscr{B}$$ es una topología. !!
+
+<br>
+
+En el próximo post hablaremos sobre algunos lemas importantes que relacionan los elementos de la base con la topologia que generan y tambien sobre como saber la base que genera cierta topologia, es decir, el **proceso inverso** a lo visto hoy.
