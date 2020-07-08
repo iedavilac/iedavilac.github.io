@@ -94,7 +94,7 @@ Ahora veamos algunos ejemplos de bases.
 
 <br>
 
-{% include image.html url="/assets/images/closed_subsets/examples_1.png" 
+{% include image.html url="/assets/images/closed_subsets/example_1.png" 
   %}
 
 <br>
@@ -142,6 +142,10 @@ Pero antes mostramos que la intersección de dos elementos de la topología es u
 <br>
 
 $$\therefore$$ $$\tau$$ generado por $$\mathscr{B}$$ es una topología. !!
+
+<br>
+
+<hr> 
 
 <br>
 
