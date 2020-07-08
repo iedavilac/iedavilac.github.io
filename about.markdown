@@ -9,11 +9,15 @@ El propósito de este blog es mantener un archivo de temas de Física, Matemáti
 
 ## About the Author
 
-**QuantumOfVacuum** es un estudiante de grado de la Licenciatura en Física en la [Facultad de Exactas](http://www.exactas.unlp.edu.ar/) de la [UNLP](https://unlp.edu.ar/), actualmente cursando el 4to año. 
+He decidido mantener la autoría de este blog anónima por el momento. Adopté el pseudónimo de **QuantumOfVacuum** ya que siempre encontré una fascinación por lo cuántico. Actualmente soy un estudiante de grado de la Licenciatura en Física en la [Facultad de Exactas](http://www.exactas.unlp.edu.ar/) de la [UNLP](https://unlp.edu.ar/), actualmente cursando el 4to año.  
 
-En un futuro planeo hacer investigación en las área de [cosmología](<https://en.wikipedia.org/wiki/Cosmology>) y gravitación. En estos momentos me interesa mucho trabajar en el área de Gravedad Cuantica de Bucles ([Loop quantum gravity](<https://en.wikipedia.org/wiki/Loop_quantum_cosmology>)).
+En un futuro planeo hacer investigación en las áreas de [cosmología](<https://en.wikipedia.org/wiki/Cosmology>) y gravitación. En estos momentos me interesa mucho trabajar en el área de Gravedad Cuántica de Bucles ([Loop quantum gravity](<https://en.wikipedia.org/wiki/Loop_quantum_cosmology>)).
 
+<br>
 
+<hr>
+
+<br>
 
 This website is written from the ground up with HTML and
 [SASS](https://sass-lang.com/). The blog is
