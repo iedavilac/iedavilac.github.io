@@ -208,13 +208,116 @@ $$
 
 Esto tanto para $$z^0>0$$ y $$z^0<0$$ .
 
+Ahora analicemos las integrales sobre $$c$$, es decir, las semicircunferencias de radio $$\epsilon$$ que encierran los polos. Al igual que en el caso anterior hagamos un cambio de variables $$k_0 = \epsilon e^{i\theta} \implies dk_0 = i\epsilon e^{i\theta}d\theta$$ y veamos el comportamiento cuando $$\epsilon\rightarrow 0$$ .
+
+$$ 
+
+\begin{align} \label{eq:23} \tag{23} 
+\int_c d\theta \pm i \epsilon \frac{e^{\pm i \epsilon e^{i\theta} z^0}}{\epsilon ^2 e^{2i\theta}-k^2} \\
+\int_c d\theta \pm i \epsilon \frac{e^{\pm i \epsilon \cos\theta z^0}e^{\mp \epsilon\sin\theta z^0}}{\epsilon^2 e^{2i\theta}-k^2}
+\end{align}
+
+$$ 
+
+Es fácil ver que la integral tiende a cero: ֍  <small class="sidenote">De hecho el resultado $$\eqref{eq:22}$$ y $$\eqref{eq:24}$$ son consecuencia del [Lema de Jordan](https://en.wikipedia.org/wiki/Jordan%27s_lemma#:~:text=In%20complex%20analysis%2C%20Jordan's%20lemma,the%20French%20mathematician%20Camille%20Jordan.)</small> .
+
+$$ 
+
+\lim_{\epsilon\rightarrow 0}\int_C \frac{e^{ik_0z^0}}{k_0^2-k^2} = 0 \label{eq:24} \tag{24} 
+
+$$ 
+
+Por consiguiente $$\eqref{eq:20}$$ quedaría:
+
+$$ 
+
+\oint_{\mathscr{C}} \frac{e^{ik_0z^0}}{k_0^2-k^2} = \lim_{R \rightarrow\infty} \int_{-R}^{R} \frac{e^{ik_0z^0}}{k_0^2-k^2} \label{eq:25} \tag{25} 
+
+$$ 
+
+Usando el [Teorema del Residuo](https://en.wikipedia.org/wiki/Residue_theorem) evaluamos la integral de contorno:
+
+$$ 
+\begin{align}\label{eq:26} \tag{26}
+\oint_\mathscr{C} \frac{e^{ik_0z^0}}{k_0^2-k^2} = \oint \frac{e^{ik_0z^0}}{(k_0-k)(k_0+k)} &= 2\pi i \sum_{k_i=+k,-k} Res(e^{ik_0 z},k_i) \\ \nonumber  
+& = 2\pi i \left( \frac{e^{ikz^0}}{2k}-\frac{e^{-ikz^0}}{2k} \right) = -2\pi \frac{\sin(kz^0)}{k}
+\end{align}
+$$ 
+
+Llegamos a que:
+
+$$ 
+
+\lim_{R \rightarrow\infty}\int_{-R}^R \frac{e^{ik_0z^0}}{k_0^2-k^2} = -2\pi \frac{\sin(kz^0)}{k} \label{eq:27} \tag{27} 
+
+$$ 
+
+La función de Green $$\eqref{eq:17}$$ ahora se escribe como
+
+$$ 
+
+G(z^\mu)=\frac{1}{2\pi^2}\int d^3k e^{-i\vec{k}\cdot \vec{z}} \frac{\sin(kz^0)}{k} \label{eq:28} \tag{28} 
+
+$$ 
+
+Sin embargo, si hacemos la integral recorriendo la curva $$\mathscr{C}_L$$ la integral daría cero, pues no contiene a ningún polo, en otras palabras, el integrando es una función analítica. Entonces, $$\eqref{eq:28}$$ es válido para $$z^0>0$$ . ֍ <small class="sidenote">Podemos reunir ambos resultados haciendo uso de la función $$\Theta$$ de Heaviside. 
+</small> 
+
+<br>
+
+## The last integral
+
+Para realizar la última integral $$\eqref{eq:28}$$ escribimos $$\vec{k}\cdot \vec{z}=kz\cos \theta $$ y pasamos a coordenadas esféricas con simétria azimutal: ֍ <small class="sidenote">La simetría azimutal nos saca una constante de $$2\pi$$ 
+</small> 
+
+$$ 
+
+\begin{align} \label{eq:29} \tag{29} 
+
+G(z^\mu) &= \frac{2\pi}{2\pi^2}\int_0^\pi d \theta\sin \theta\int_0^\infty dk k^2 e^{-ikz\cos \theta} \frac{\sin(kz^0)}{k}\Theta(z^0) \\
+&= \frac{\Theta(z^0)}{\pi} \int_0^\infty dk k \sin(kz^0)\left( \frac{e^{-ikz\cos \theta}}{ikz} \right)_{\theta=0}^{\theta=\pi} \\
+&= \frac 2 \pi \Theta(z^0) \frac 1 z \int_0^\infty dk \sin(kz^0)\sin(kz) \\	
+&= -\frac 1 {4\pi}\Theta(z^0)\frac 1 z \int_{-\infty}^{\infty} dk\left( e^{ik(z^0+z)-e^{ik(z^0-z)}-e^{-ik(z^0-z)}+e^{-ik(z^0+z)}} \right) \\
+&=-\frac 1 2 \Theta(z^0)\frac 1 z (2\delta(z^0+z)-2\delta(z^0-z))
+
+\end{align}
+
+$$ 
+
+La función $$\delta(z^0+z)$$ no tiene soporte cuando $$z^0>0$$ entonces por definición debe ser cero. Quedando:
+
+$$ 
+G(x^\mu-x'^\mu) = \frac{\delta(x^0-x'^0-|\vec{x}-\vec{x}'|)}{|\vec{x}-\vec{x}'|} \label{eq:30} \tag{30} 
+
+$$ 
+
+A esta solución de la función de Green se le suele llamar **función de Green retardada** ya que para evaluar tiempos futuros requiere saber el valor en un tiempo pasado.
+
+<br>
+
+## Retarded four-potential
+
+Ahora que conocemos la función de Green podemos escribir el cuadripotencial $$\eqref{eq:7}$$ como
+
+$$ 
+\begin{align} \label{eq:31} \tag{31} 
+A^{\nu}(x^\mu) &= \frac{\mu_0}{4\pi} \int d^4 x' \frac{\delta(x^0-x'^0-|\vec{x}-\vec{x}'|)}{|\vec{x}-\vec{x}'|} J^\nu(x'^\mu) \\
+&= \frac{\mu_0}{4\pi} \int d^4 x' \frac{J^\nu(x^0_{ret},x'^i)}{|\vec{x}-\vec{x}'|}
+\end{align}
+$$ 
+
+Donde $$x^0_{ret} = x^0-d(\vec{x}-\vec{x}')$$ es el **tiempo retardado**.
+
+<br>
+
+<hr>
+
+<br>
 
 
 
 
-
-
-
+ 
 
 
 
