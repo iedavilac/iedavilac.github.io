@@ -263,3 +263,24 @@ footer {
 .mjx-chtml {
   font-size: 110% !important;
 }
+
+.sidenote {
+	display: block;
+	float: right;
+	width: 200px;
+	border: 1px solid $white;
+	margin: 2px;
+	margin-right: -40%;
+	padding: 3px;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+.sidenote::before {
+  content: "֍ ";
+  color: $peach;
+  font-size: 150%;
+}
+
