@@ -1,0 +1,40 @@
+{% include header2.html %}
+
+<main>
+<body class="is-preload">
+
+	<section>
+		<header id="header">
+		<a href="/" class="logo"><strong>Physics, Math , Programming and History</strong> by QuantumOfVacuum</a>
+		</header>
+		<h2 class="post-head">{{ page.title }}</h2>
+		<span>[
+			{% for tag in page.tags %}
+				{% capture tag_name %}{{ tag }}{% endcapture %}
+			<a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
+			{% endfor %}
+]		</span>
+		{{content}}
+	</section>
+
+	
+	
+	<br>
+	
+	<!-- Footer -->
+		<footer id="footer">
+			<p class="copyright">&copy; Untitled. All rights reserved. . Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+		</footer>
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+
+</main>
+</body>
