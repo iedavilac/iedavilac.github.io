@@ -314,7 +314,7 @@ Donde $$x^0_{ret} = x^0-d(\vec{x}-\vec{x}')$$ es el **tiempo retardado**.
 
 <br>
 
-
+Con esto concluye este post. Hemos hallado la función de Green $$\eqref{eq:30}$$  para la ecuación de onda que satisface el cuadripotencial y con esto hemos hallado su solución $$\eqref{eq:31}$$  . Esto es un resutado importante y representa una piedra angular en el Electromagnetismo ya que permite resolver cualquier problema, siempre y cuando sepamos las distribuciones de carga y corriente.
 
 
  
