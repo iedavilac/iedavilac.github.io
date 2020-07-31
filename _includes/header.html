@@ -2,13 +2,73 @@
 <html lang="en">
   <head>
 	<title>Blog | {{ page.title }} </title>
+	<meta name="supported-color-schemes" content="light dark">
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link id="theme" href="/assets/css/light.css" media="screen" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png">
 	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 	  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
+	
+	<script type="text/javascript">
+	
+		/*
+			This is what kicks off the magic: the page starts off using CSS variables in light.css. The
+			switchThemes() function changes the URL to dark.css. That, in turn, propagates color changes
+			and transitions throughout shared.css.
+		*/
+		function switchThemes() {
+			console.log("switching themes...");
+			var stylesheetLinkElement = document.getElementById('theme');
+			if (stylesheetLinkElement.getAttribute('href') == '/assets/css/light.css') {
+				stylesheetLinkElement.setAttribute('href', '/assets/css/dark.css');
+			}
+			else {
+				stylesheetLinkElement.setAttribute('href', '/assets/css/light.css');
+			}
+		}
+		
+		/*
+			You can check the prefers-color-scheme media query with JavaScript and update the page
+			accordingly. This would be handy if you're doing configuration on the page.
+		*/
+		function checkPrefersColorScheme() {
+			console.log("checking prefers-color-scheme..");
+			var status = 'not present'
+			var mediaQueryList = window.matchMedia('(prefers-color-scheme: dark)');
+			if (mediaQueryList.matches) {
+				status = '"dark"';
+			}
+			else {
+				mediaQueryList = window.matchMedia('(prefers-color-scheme: light)');
+				if (mediaQueryList.matches) {
+					status = '"light"';
+				}
+			}
+			var statusElement = document.getElementById('color_scheme_status');
+			statusElement.innerHTML = 'Your browser\'s <code>prefers-color-scheme</code> is ' + status + '.';
+			
+			/*
+				The media query list can have a listener which will be called when the user switches
+				between light and dark modes. It works just like addEventListener() because it inherits
+				from EventTarget.
+			*/
+			mediaQueryList.addListener( function(mql) {
+				console.log('event listener for ' + mql.media + ' changed to ' + mql.matches);	
+				var status = 'not defined';
+				if (mql.media == '(prefers-color-scheme: light)') {
+					status = (mql.matches ? '"light"' : '"dark"');
+				}
+				else if (mql.media == '(prefers-color-scheme: dark)') {
+					status = (mql.matches ? '"dark"' : '"light"');
+				}
+				var statusElement = document.getElementById('color_scheme_status');
+				statusElement.innerHTML = 'Your browser\'s <code>prefers-color-scheme</code> changed to ' + status + '.';
+			});
+		}
+	</script>
   </head>
     
 
