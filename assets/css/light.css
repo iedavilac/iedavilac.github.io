@@ -1,0 +1,19 @@
+
+:root {
+	--text-color: black;
+	--background-color: white;
+
+	--container-color: whitesmoke;
+
+	--accent-color: black;
+
+	--control-color: skyblue;
+	--control-text-color: black;
+	--control-disabled-color: lightblue;
+	--control-background-color: whitesmoke;
+	
+	--sidebar-background: #ced5db;
+	--sidebar-text-color: #0a0d0f;
+	--sidebar-sep: #000;
+
+}
