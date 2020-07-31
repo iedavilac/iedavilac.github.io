@@ -26,7 +26,7 @@ html {
 
 body {
   font-size: $base-font-size;
-  background-color: #000;
+  background-color: #000; 
   color: #DBDBDB;
   line-height: 1.6;
   margin: 0 auto;
@@ -51,6 +51,7 @@ video {
 }
 
 figure {
+  counter-increment: figures;
   img,
   video {
     display: block;
@@ -64,7 +65,7 @@ figure {
     text-align: center;
 
     &::before {
-      content: "Figura: ";
+      content: "Figura " counter(figures) ": ";
     }
   }
 }
@@ -159,6 +160,7 @@ main {
 
 article {
   display: flex;
+  counter-reset: figures;
 
   .date {
     color: $grey;
@@ -290,4 +292,5 @@ footer {
   padding: .6rem 0 .6rem 1.8rem;
   background: $grey;
 }
+
 
