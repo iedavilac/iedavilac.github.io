@@ -5,6 +5,12 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+
+:root {
+	--transition-duration: 1.0s;
+	--transition-timing: ease-in-out;
+}
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -91,7 +97,7 @@ html {
 
 
 body {
-  background: #000; }
+  background: var(--background-color); }
   body.is-preload *, body.is-preload *:before, body.is-preload *:after, body.is-resizing *, body.is-resizing *:before, body.is-resizing *:after {
     -moz-animation: none !important;
     -webkit-animation: none !important;
@@ -104,11 +110,16 @@ body {
 
 /* Type */
 body, input, select, textarea {
-  color: #DBDBDB;
+  color: var(--text-color);
   font-family: "Open Sans", sans-serif;
   font-size: 13pt;
   font-weight: 400;
-  line-height: 1.65; }
+  line-height: 1.65; 
+  
+  transition: color var(--transition-duration) var(--transition-timing),
+				background-color var(--transition-duration) var(--transition-timing);
+  
+  }
   @media screen and (max-width: 1680px) {
     body, input, select, textarea {
       font-size: 11pt; } }
@@ -144,7 +155,7 @@ p {
   margin: 0 0 2em 0; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #DBDBDB;
+  color: var(--text-color);
   font-family: "Roboto Slab", serif;
   font-weight: 700;
   line-height: 1.5;
@@ -1504,21 +1515,21 @@ button,
   -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  background-color: transparent;
+  background-color: var(--background-color);
   border-radius: 0.375em;
   border: 0;
   box-shadow: inset 0 0 0 2px #f56a6a;
   color: #f56a6a !important;
   cursor: pointer;
   display: inline-block;
+  float: right;
   font-family: "Roboto Slab", serif;
   font-size: 0.8em;
   font-weight: 700;
   height: 3.5em;
   letter-spacing: 0.075em;
   line-height: 3.5em;
-  padding: 0 2.25em;
+  padding: 0 1.25em;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -1591,7 +1602,12 @@ button,
   .button.disabled,
   .button:disabled {
     pointer-events: none;
-    opacity: 0.25; }
+    opacity: 0.25;
+
+	transition: color var(--transition-duration) var(--transition-timing),
+				background-color var(--transition-duration) var(--transition-timing);
+
+	}
 
 /* Mini Posts */
 .mini-posts article {
@@ -1941,7 +1957,7 @@ button,
   -webkit-transition: margin-left 0.5s ease, box-shadow 0.5s ease;
   -ms-transition: margin-left 0.5s ease, box-shadow 0.5s ease;
   transition: margin-left 0.5s ease, box-shadow 0.5s ease;
-  background-color: #222324;
+  background-color: var(--sidebar-background);
   font-size: 0.9em;
   position: relative;
   width: 26em; }
@@ -2211,7 +2227,7 @@ button,
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  color: #dadee3;
+  color: var(--sidebar-text-color);
   font-family: "Roboto Slab", serif;
   font-weight: 400;
   letter-spacing: 0.075em;
@@ -2267,7 +2283,7 @@ button,
         transform: rotate(-180deg); }
 
 #menu > ul > li {
-  border-top: solid 1px rgba(210, 215, 217, 0.75);
+  border-top: solid 1px var(--sidebar-sep);
   margin: 0.5em 0 0 0;
   padding: 0.5em 0 0 0; }
   #menu > ul > li > ul {
