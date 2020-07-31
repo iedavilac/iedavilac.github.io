@@ -19,6 +19,11 @@
   padding: 0;
 }
 
+:root {
+	--transition-duration: 1.0s;
+	--transition-timing: ease-in-out;
+}
+
 html {
   font-family: $sans;
   font-size: 10px;
@@ -26,12 +31,15 @@ html {
 
 body {
   font-size: $base-font-size;
-  background-color: #000; 
-  color: #DBDBDB;
+  background-color: var(--background-color); 
+  color: var(--text-color);
   line-height: 1.6;
   margin: 0 auto;
   max-width: 75rem;
   padding: 3rem 3rem 0;
+  
+  transition: color var(--transition-duration) var(--transition-timing),
+				background-color var(--transition-duration) var(--transition-timing);
 
   & > * {
     margin-bottom: 2.4rem;
@@ -42,6 +50,13 @@ body {
 h2.post-head {
   margin: unset;
 }
+
+section h2 {
+	border-bottom: 2px solid var(--accent-color);
+
+	transition: border var(--transition-duration) var(--transition-timing);
+}
+
 
 img,
 video {
@@ -96,18 +111,18 @@ code {
 
 
 blockquote {
-  color: $white;
-  border-left: 0.2rem solid $white;
-  border-right: 0.2rem solid $white;
-  border-top: 0.2rem solid $white;
-  border-bottom: 0.2rem solid $white;
+  color: var(--text-color);
+  border-left: 0.2rem solid var(--text-color);
+  border-right: 0.2rem solid var(--text-color);
+  border-top: 0.2rem solid var(--text-color);
+  border-bottom: 0.2rem solid var(--text-color);
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   padding: .6rem 0 .6rem 1.8rem;
   text-align: left;
-  background: #000;
+  background: var(--background-color);
 
   cite {
     border-left: unset;
@@ -270,7 +285,7 @@ footer {
 	display: block;
 	float: right;
 	width: 200px;
-	border: 1px solid $white;
+	border: 1px solid var(--text-color);
 	margin: 2px;
 	margin-right: -40%;
 	padding: 3px;
@@ -292,5 +307,112 @@ footer {
   padding: .6rem 0 .6rem 1.8rem;
   background: $grey;
 }
+
+/* Button */
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+.button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  background-color: var(--background-color);
+  border-radius: 0.375em;
+  border: 0;
+  box-shadow: inset 0 0 0 2px #f56a6a;
+  color: #f56a6a !important;
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  font-family: "Roboto Slab", serif;
+  font-size: 0.7em;
+  font-weight: 700;
+  height: 3.5em;
+  letter-spacing: 0.075em;
+  line-height: 3.5em;
+  padding: 0 0.6em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap; }
+  input[type="submit"]:hover,
+  input[type="reset"]:hover,
+  input[type="button"]:hover,
+  button:hover,
+  .button:hover {
+    background-color: rgba(245, 106, 106, 0.05); }
+  input[type="submit"]:active,
+  input[type="reset"]:active,
+  input[type="button"]:active,
+  button:active,
+  .button:active {
+    background-color: rgba(245, 106, 106, 0.15); }
+  input[type="submit"].icon:before,
+  input[type="reset"].icon:before,
+  input[type="button"].icon:before,
+  button.icon:before,
+  .button.icon:before {
+    margin-right: 0.5em; }
+  input[type="submit"].fit,
+  input[type="reset"].fit,
+  input[type="button"].fit,
+  button.fit,
+  .button.fit {
+    width: 100%; }
+  input[type="submit"].small,
+  input[type="reset"].small,
+  input[type="button"].small,
+  button.small,
+  .button.small {
+    font-size: 0.6em; }
+  input[type="submit"].large,
+  input[type="reset"].large,
+  input[type="button"].large,
+  button.large,
+  .button.large {
+    font-size: 1em;
+    height: 3.65em;
+    line-height: 3.65em; }
+  input[type="submit"].primary,
+  input[type="reset"].primary,
+  input[type="button"].primary,
+  button.primary,
+  .button.primary {
+    background-color: #f56a6a;
+    box-shadow: none;
+    color: #ffffff !important; }
+    input[type="submit"].primary:hover,
+    input[type="reset"].primary:hover,
+    input[type="button"].primary:hover,
+    button.primary:hover,
+    .button.primary:hover {
+      background-color: #f67878; }
+    input[type="submit"].primary:active,
+    input[type="reset"].primary:active,
+    input[type="button"].primary:active,
+    button.primary:active,
+    .button.primary:active {
+      background-color: #f45c5c; }
+  input[type="submit"].disabled, input[type="submit"]:disabled,
+  input[type="reset"].disabled,
+  input[type="reset"]:disabled,
+  input[type="button"].disabled,
+  input[type="button"]:disabled,
+  button.disabled,
+  button:disabled,
+  .button.disabled,
+  .button:disabled {
+    pointer-events: none;
+    opacity: 0.25;
+
+	transition: color var(--transition-duration) var(--transition-timing),
+				background-color var(--transition-duration) var(--transition-timing);
+
+	}
 
 
