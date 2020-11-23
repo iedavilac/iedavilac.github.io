@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	
+		
+
+
+
+
+
+	
+    <meta charset="utf-8">
+	<meta name="supported-color-schemes" content="light dark">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link id="theme" href="/assets/css/light.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/assets/styles/main.css" rel="stylesheet">
+	<link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png">
+
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
+
+	<script type="text/javascript">
+	
+		/*
+			This is what kicks off the magic: the page starts off using CSS variables in light.css. The
+			switchThemes() function changes the URL to dark.css. That, in turn, propagates color changes
+			and transitions throughout shared.css.
+		*/
+		function switchThemes() {
+			console.log("switching themes...");
+			var stylesheetLinkElement = document.getElementById('theme');
+			if (stylesheetLinkElement.getAttribute('href') == '/assets/css/light.css') {
+				stylesheetLinkElement.setAttribute('href', '/assets/css/dark.css');
+			}
+			else {
+				stylesheetLinkElement.setAttribute('href', '/assets/css/light.css');
+			}
+		}
+		
+		/*
+			You can check the prefers-color-scheme media query with JavaScript and update the page
+			accordingly. This would be handy if you're doing configuration on the page.
+		*/
+		function checkPrefersColorScheme() {
+			console.log("checking prefers-color-scheme..");
+			var status = 'not present'
+			var mediaQueryList = window.matchMedia('(prefers-color-scheme: dark)');
+			if (mediaQueryList.matches) {
+				status = '"dark"';
+			}
+			else {
+				mediaQueryList = window.matchMedia('(prefers-color-scheme: light)');
+				if (mediaQueryList.matches) {
+					status = '"light"';
+				}
+			}
+			var statusElement = document.getElementById('color_scheme_status');
+			statusElement.innerHTML = 'Your browser\'s <code>prefers-color-scheme</code> is ' + status + '.';
+			
+			/*
+				The media query list can have a listener which will be called when the user switches
+				between light and dark modes. It works just like addEventListener() because it inherits
+				from EventTarget.
+			*/
+			mediaQueryList.addListener( function(mql) {
+				console.log('event listener for ' + mql.media + ' changed to ' + mql.matches);	
+				var status = 'not defined';
+				if (mql.media == '(prefers-color-scheme: light)') {
+					status = (mql.matches ? '"light"' : '"dark"');
+				}
+				else if (mql.media == '(prefers-color-scheme: dark)') {
+					status = (mql.matches ? '"dark"' : '"light"');
+				}
+				var statusElement = document.getElementById('color_scheme_status');
+				statusElement.innerHTML = 'Your browser\'s <code>prefers-color-scheme</code> changed to ' + status + '.';
+			});
+		}
+	</script>
+
+    <title>
+      Blog | History bits
+    </title>
+  </head>
+  
+  <body>
+   
+
+  </header>
+
+
+<main>
+<body class="is-preload">
+
+	<section>
+		<header id="header">
+		<a href="/" class="logo"><strong>Physics, Math , Programming and History</strong> by QuantumOfVacuum</a>
+		</header>
+		<h2 class="post-head">History bits</h2>
+		<span>[
+			
+]		</span>
+		<div class="post">
+<h1>Tag: history-bits</h1>
+<ul>
+
+  <li><a href="/2020/05/19/Early-Monarchy-and-The-Unification.html">Early Monarchy and The Unification</a> (19 May 2020)<br>
+    This is a short text about the firsts pharaos of Egypt and how the unification happened.
+  </li>
+
+</ul>
+</div>
+<hr>
+	</section>
+
+	
+	
+	<br>
+	
+	<!-- Footer -->
+		<footer id="footer">
+			<p class="copyright">&copy; Untitled. All rights reserved. . Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+		</footer>
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+
+</main>
+</body>
