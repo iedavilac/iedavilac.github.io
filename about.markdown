@@ -5,13 +5,11 @@ layout: default
 
 ## About
 
-El propósito de este blog es mantener un archivo de temas de Física, Matemáticas , Programación e Historia que el autor vaya aprendiendo durante los años. Muchos dicen que la mejor forma de aprender es enseñar a otros, asi que intento lo mejor posible en hacer el contenido lo más ameno para nuevos estudiantes.
+El propósito de este blog es mantener un archivo de temas de Física, Matemáticas , Programación e Historia que el autor vaya aprendiendo durante los años. Muchos dicen que la mejor forma de aprender es enseñar a otros, asi que intento lo mejor posible en hacer el contenido lo más ameno para nuevos estudiantes y lectores no familiarizados.
 
 ## About the Author
 
-He decidido mantener la autoría de este blog anónima por el momento. Adopté el pseudónimo de **QuantumOfVacuum** ya que siempre encontré una fascinación por lo cuántico. Actualmente soy un estudiante de grado de la Licenciatura en Física en la [Facultad de Exactas](http://www.exactas.unlp.edu.ar/) de la [UNLP](https://unlp.edu.ar/), actualmente cursando el 4to año.  
-
-En un futuro planeo hacer investigación en las áreas de [cosmología](<https://en.wikipedia.org/wiki/Cosmology>) y Gravedad Cuántica. En estos momentos me interesa mucho trabajar en el área de Gravedad Cuántica de Bucles ([Loop quantum gravity](<https://en.wikipedia.org/wiki/Loop_quantum_cosmology>)).
+He decidido mantener la autoría de este blog anónima por el momento. Adopté el pseudónimo de **QuantumOfVacuum** ya que siempre encontré una fascinación por lo cuántico. Soy un  en estudiante de física. Mis intereses académicos actualmente son **Teorías de Gauge**, **Gravedad Cuántica de Bucles**, **Topología Algebraica aplicada a la Física**, **Gravedad Cuántica** (que futuro físico no,no?) y en general aspectos matemáticos con alguna aplicación en Física Teórica.
 
 <br>
 
