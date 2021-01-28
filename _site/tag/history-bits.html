@@ -12,7 +12,7 @@
     <meta charset="utf-8">
 	<meta name="supported-color-schemes" content="light dark">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link id="theme" href="/assets/css/light.css" media="screen" rel="stylesheet" type="text/css" />
+	<link id="theme" href="/assets/css/dark.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="/assets/styles/main.css" rel="stylesheet">
 	<link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png">
 
@@ -30,49 +30,12 @@
 			var stylesheetLinkElement = document.getElementById('theme');
 			if (stylesheetLinkElement.getAttribute('href') == '/assets/css/light.css') {
 				stylesheetLinkElement.setAttribute('href', '/assets/css/dark.css');
+				localStorage.setItem('stylesheetLinkElement','dark');
 			}
 			else {
 				stylesheetLinkElement.setAttribute('href', '/assets/css/light.css');
+				localStorage.setItem('stylesheetLinkElement','light');
 			}
-		}
-		
-		/*
-			You can check the prefers-color-scheme media query with JavaScript and update the page
-			accordingly. This would be handy if you're doing configuration on the page.
-		*/
-		function checkPrefersColorScheme() {
-			console.log("checking prefers-color-scheme..");
-			var status = 'not present'
-			var mediaQueryList = window.matchMedia('(prefers-color-scheme: dark)');
-			if (mediaQueryList.matches) {
-				status = '"dark"';
-			}
-			else {
-				mediaQueryList = window.matchMedia('(prefers-color-scheme: light)');
-				if (mediaQueryList.matches) {
-					status = '"light"';
-				}
-			}
-			var statusElement = document.getElementById('color_scheme_status');
-			statusElement.innerHTML = 'Your browser\'s <code>prefers-color-scheme</code> is ' + status + '.';
-			
-			/*
-				The media query list can have a listener which will be called when the user switches
-				between light and dark modes. It works just like addEventListener() because it inherits
-				from EventTarget.
-			*/
-			mediaQueryList.addListener( function(mql) {
-				console.log('event listener for ' + mql.media + ' changed to ' + mql.matches);	
-				var status = 'not defined';
-				if (mql.media == '(prefers-color-scheme: light)') {
-					status = (mql.matches ? '"light"' : '"dark"');
-				}
-				else if (mql.media == '(prefers-color-scheme: dark)') {
-					status = (mql.matches ? '"dark"' : '"light"');
-				}
-				var statusElement = document.getElementById('color_scheme_status');
-				statusElement.innerHTML = 'Your browser\'s <code>prefers-color-scheme</code> changed to ' + status + '.';
-			});
 		}
 	</script>
 
