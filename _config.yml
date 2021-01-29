@@ -19,7 +19,7 @@ description: >- # this means to ignore newlines until "baseurl:"
     Physics, Maths and Programming.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  QuantumOfVacuum
+github_username:  iedavilac
 
         
 # Build settings
@@ -35,6 +35,7 @@ kramdown:
     syntax_highlighter: rouge
 
 remote_theme: b2a3e8/jekyll-theme-console
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
