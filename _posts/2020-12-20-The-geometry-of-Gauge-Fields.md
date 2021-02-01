@@ -4,6 +4,11 @@ title: "The geometry of Gauge Fields"
 date: 2020-12-20
 excerpt: This will be the first in a series of post about concepts in geometry of gauge fields and properties of Yang-Mills equations based on the book of Sir Michael Atiyah, Geometry of Yang-Mills Fields.
 tags: [math,physics]
+sitemap:
+  lastmod: 2021-01-29
+  priority: 0.7
+  changefreq: 'monthly'
+  exclude: 'yes'
 ---
 
 $$
