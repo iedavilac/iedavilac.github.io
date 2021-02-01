@@ -13,29 +13,8 @@
 
     <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
 
-	<script type="text/javascript">
-	
-		/*
-			This is what kicks off the magic: the page starts off using CSS variables in light.css. The
-			switchThemes() function changes the URL to dark.css. That, in turn, propagates color changes
-			and transitions throughout shared.css.
-		*/
-		function switchThemes() {
-			console.log("switching themes...");
-			var stylesheetLinkElement = document.getElementById('theme');
-			if (stylesheetLinkElement.getAttribute('href') == '/assets/css/light.css') {
-				stylesheetLinkElement.setAttribute('href', '/assets/css/dark.css');
-				localStorage.setItem('stylesheetLinkElement','dark');
-			}
-			else {
-				stylesheetLinkElement.setAttribute('href', '/assets/css/light.css');
-				localStorage.setItem('stylesheetLinkElement','light');
-			}
-		}
-	</script>
-
     <title>
-      Blog | {{page.title}}
+      {{site.title}} | {{page.title}}
     </title>
   </head>
   
