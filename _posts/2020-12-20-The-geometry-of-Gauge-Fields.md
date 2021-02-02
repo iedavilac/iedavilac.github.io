@@ -124,14 +124,14 @@ Notemos que el potencial de gauge no tranforma homogeneamente como el campo de g
 Pensemos esto geométricamente . Imaginemos una partícula con estructura interna que está localizada en un punto $$x\in\m R^4$$. Por estructura interna podemos referirnos a la carga, spin o un conjunto de estados que están identificados con elementos $$g$$ de $$G$$. Ahora consideramos al espacio de todos los estados de la partícula y lo denotamos como $$P$$. En general el espacio interno $$G_x$$ en cada punto distinto, entonces podemos hacer un dibujo como el siguiente
 
 <br>
-{% include image.html url="/assets/images/geometry_gauge/fibre_section.png" description="Representación geométrica de un fibrado."
+{% include image.html url="/assets/images/geometry_gauge/fibre_section.PNG" description="Representación geométrica de un fibrado."
   %}
 <br>
 
 La líneas verticales representan los espacios internos en cada punto de $$x\in\m R^4$$ y son llamadas **fibras**. En ausencia de campos externos consideramos que es posible identificar distintos $$G_x$$, de modo que también podemos dibujar unas líneas horizontales como en la siguiente figura
 
 <br>
-{% include image.html url="/assets/images/geometry_gauge/fibre_section2.png" description="Grilla generada por las fibras y las secciones." 
+{% include image.html url="/assets/images/geometry_gauge/fibre_section2.PNG" description="Grilla generada por las fibras y las secciones." 
   %}
 <br>
 
