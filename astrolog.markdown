@@ -26,4 +26,26 @@ layout: astrolog
 <br>
 
 - (2021/02/01) During the day the sky was really cloudy, not to mention the nightsky. It looks its going to be a cloudy week. We shall try to take photos of the mountains.
+- (2021/02/02) The sky was clear gor about 30 minutes. In that time we manage to take some photos of stars and the houses in the mountain. The photos aren't modified. We were trying to test exposition time and contrast.
 
+<br>
+{% include image.html url="/assets/images/astrolog/IMG_20210202_202557524.jpg" 
+  %}
+<br>
+
+<br>
+{% include image.html url="/assets/images/astrolog/IMG_20210202_195906515.jpg" 
+  %}
+<br>
+
+<br>
+{% include image.html url="/assets/images/astrolog/IMG_20210202_200652067.jpg" 
+  %}
+<br>
+
+- (2021/02/03) The sky was clear for about 2 hour straight. We take some photos of Perseo constellation. I'm still in the process of processing the photos in DeepSkyStacker. Then I'm planning to use Photoshop to improve the quality of the image. However, here goes a pic that shows some of the brightest stars of Perseo.
+
+<br>
+{% include image.html url="/assets/images/astrolog/perseo_noproccessing.jpg" 
+  %}
+<br>
