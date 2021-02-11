@@ -16,7 +16,7 @@
 title: "Curious Manifold"
 email: 
 description: >- # this means to ignore newlines until "baseurl:"
-    Physics, Maths and Programming.
+    Physics, Maths, Programming and a little History
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://iedavilac.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: iedavilac
