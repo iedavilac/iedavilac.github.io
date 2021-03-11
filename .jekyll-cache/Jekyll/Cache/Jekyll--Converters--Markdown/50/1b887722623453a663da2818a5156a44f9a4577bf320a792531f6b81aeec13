@@ -1,0 +1,193 @@
+I"�3<script type="math/tex; mode=display">\DeclareMathOperator{\Tr}{Tr}
+\newcommand{\imp}{\implies}			% Simbolo de implicacion
+\newcommand{\supr}[1]{\underset{#1}{\sup}}
+\newcommand{\mbf}[1]{\mathbf{#1}}     % Negrita en modo matemático
+\newcommand{\lra}{\leftrightarrow}     % Flecha derecha e izquierda
+\newcommand{\h}{\hat}             % hat para operadores
+\newcommand{\red}[1]{\color{red}{#1}}
+\newcommand{\green}[1]{\color{green}{#1}}
+\newcommand{\blue}[1]{\color{blue}{#1}}
+\newcommand{\pr}{\partial}      % Abreviacion para \partial
+\newcommand{\cd}{\cdot}           % \cdot
+\newcommand{\cds}{\cdots}           % \cdots
+\newcommand{\inceq}{\subseteq}    % incluido e igual
+\newcommand{\vc}[1]{\vec{#1}}     % vector
+\newcommand{\dg}{^\dagger}
+\newcommand{\conj}[1]{#1^*}       % conjugado
+\newcommand{\pescalar}[2]{#1\cd #2}    % Producto escalar
+\newcommand{\f}[2]{\frac{#1}{#2}}           % Short version for \frac
+\newcommand{\dott}[1]{\overset{\cdot\cdot}{#1}} % Doble Punto encima (dt)
+\newcommand{\nab}{\nabla}     % Shortcut for nabla
+%\newcommand{\eval}{\big\rvert}  % Raya vertical para indicar evaluación
+%\newcommand{\deg}[1]{#1^{\circ}}    % Grados
+\newcommand{\la}{\leftarrow}        % Leftarrow
+\newcommand{\mc}[1]{\mathcal{#1}}      % Tipografia caligrafia 
+\newcommand{\mf}[1]{\mathfrak{#1}}      % Tipografia frakture (gótico)
+\newcommand{\tf}{\therefore }			% Los tres puntitos en triangulo
+\newcommand{\sder}[2]{\frac{d #1}{d #2}} % Derivada simple de #1 respecto a #2
+\newcommand{\der}[3]{\frac{d^{#1}#2}{d #3^{#1}}}  % Derivada n-sima de #1 respecto a #2
+\newcommand{\sparc}[2]{\frac{\partial #1}{\partial #2}} %Derivadas parciales
+\newcommand{\parc}[3]{\frac{\partial^{#1}#2}{\partial #3^{#1}}} %Derivada parcial n-esima respecto de #3
+\newcommand{\m}[1]{\mathbb{#1}}	% Hace una letra R --> \mathbb{R}
+\newcommand{\inc}{\subset}   % Incluido
+\newcommand{\ndvec}[2]{(#1_1,#1_2,\ldots,#1_{#2})} %Crea un vector #2-dimensional con nombre #1
+\newcommand{\ci}{\imath}		% Unidad imaginaria
+\newcommand{\ptodo}{\forall}	% Para todo simbolo
+\newcommand{\me}[1]{#1\m Z}		% Multiplos enteros de #1: #1Z.
+\newcommand{\tq}{\mid}			% Simbolo para tal que...
+\newcommand{\pp}[1]{#1^{\prime\prime}\mkern-1.2mu} %#1´´ 
+\newcommand{\e}[1]{e^{#1}}		% Exponencial de #1
+\newcommand{\om}{\omega}			% Shortcut para omega
+\newcommand{\Om}{\Omega}			% Shortcut para Omega
+\newcommand{\lam}{\lambda}          % Lambda
+\newcommand{\Lam}{\Lambda}         % Lambda mayuscula
+\newcommand{\al}{\alpha}          % alpha
+\newcommand{\be}{\beta}           % beta
+\newcommand{\gm}{\gamma}         % gamma
+\newcommand{\Gm}{\Gamma}          % Gamma
+\newcommand{\del}{\delta}         % Delta
+\newcommand{\sg}{\sigma}          % Sigma
+\newcommand{\Del}{\Delta}
+\newcommand{\rel}{\sim}
+\newcommand{\uvec}[1]{\bm{\hat{\mathbf{#1}}}}   % Vector unitario
+\newcommand{\vct}[1]{\vec{\mathbf{#1}}}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\eps}{\epsilon}
+\newcommand{\ex}{\exists}
+\newcommand{\bp}[1]{\left(#1\right)}
+\newcommand{\bb}[1]{\left[#1\right]}
+\newcommand{\bl}[1]{\left\{#1\right\}}
+\newcommand{\deld}[1]{\delta^{(3)}(#1)}      % Delta de Dirac en 3d
+\newcommand{\ddrc}[2]{\delta^{(#1)}(#2)}      % Delta de Dirac en Nd
+\newcommand{\lrpr}{\overset{\lra}{\pr}}		% left right partial
+\newcommand{\slashd}{\kern-0.5em\raise0.22ex\hbox{/}}
+\newcommand{\barra}[1]{\cancel{#1}}
+\newcommand{\lan}{\langle}
+\newcommand{\ran}{\rangle}</script>
+
+<p>Teorías de campo en una dimensión espacial proveen un punto de inicio natural para estudiar solitones. Debido a las simplificaciones que resultan de trabajar en una dimensión algunas cuentas se pueden realizar explicitamente. Además, las consideraciones topológicas que juegan un rol importante en la clasificación de solitones en cualquier dimensión son particularmente fáciles de visualizar en teorías de una dimensión.</p>
+
+<p>En este post analizaremos el <strong>kink</strong>. Yo diría que es el solitón más sencillo de hallar y el más básico.</p>
+
+<h2 id="kink">Kink</h2>
+
+<p>El ejemplo clásico de un solitón en un dimensión espacial aparece en un teoría con un solo campo escalar y con la densidad lagrangiana siguiente</p>
+
+<script type="math/tex; mode=display">\mc L = \f 12(\pr_\mu\phi)(\pr^\mu\phi)-V(\phi), \label{eq:1} \tag{1}</script>
+
+<p>donde el potencial escalar es</p>
+
+<script type="math/tex; mode=display">V(\phi) = \f\lambda 4(\phi^2-v^2)^2. \label{eq:2} \tag{2}</script>
+
+<p>Donde, además, <script type="math/tex">m^2</script> y <script type="math/tex">\lambda</script> son constantes positivas y</p>
+
+<script type="math/tex; mode=display">v = \sqrt{\f{m^2}\lambda} \label{eq:3} \tag{3}</script>
+
+<p>Notemos que en dos dimensiones espaciotemporales el campo escalar es adimensional, de modo que las constantes de acoplamiento si tienen dimensiones. El parámetro adicional que indica un acoplamiento fuerte o débil es <script type="math/tex">\f{\lambda}{m^2}</script>.</p>
+
+<p>La densidad lagrangiana <script type="math/tex">\eqref{eq:1}</script>  es invariante ante paridad, <script type="math/tex">\phi\ra-\phi</script>. Esta simetría se rompe espontáneamente con <script type="math/tex">V(\phi)</script> teniendo dos mínimos degenerados en <script type="math/tex">\phi = \pm v</script>. Expandamos el potencial</p>
+
+<script type="math/tex; mode=display">V(\phi) = \f{\lambda}4(\phi^2-v^2)^2 = \f{\lambda\phi^4}4-\f{\lambda\phi^2 v^2}2+\f{\lambda v^4}4.</script>
+
+<p>El término constante (que no afecta a la dinámica del campo) puede ser ajustado de modo que <script type="math/tex">V =0</script> en el mínimo. Elijamos alguno de estos mínimos y expandamos el campo alrededor de este mínimo. Por ejemplo, elijamos el vacío <script type="math/tex">+v</script>. Entonces expandamos el campo <script type="math/tex">\phi-v</script>. El término cinético del lagrangiano no se ve afectado pero el potencial arroja un término <em>másico</em></p>
+
+<script type="math/tex; mode=display">-m^2\phi^2</script>
+
+<p>Al ser un campo escalar, este término lo interpretamos como una partícula escalar con masa <script type="math/tex">\f{M^2}2=m^2\implies M=\sqrt{2}m</script>.</p>
+
+<p>Las ecuaciones <strong>clásicas</strong> de Euler-Lagrange para esta teoría son</p>
+
+<script type="math/tex; mode=display">\f{d^2\phi}{d t^2}-\f{d^2\phi}{d x^2}=-\lambda(\phi^2-v^2)\phi \label{eq:4} \tag{4}</script>
+
+<p>Queremos soluciones estáticas (buscamos un solitón), las cuales satisfacen</p>
+
+<script type="math/tex; mode=display">\f{d^2\phi}{dx^2}-\lambda(\phi^2-v^2)\phi=0 \label{eq:5} \tag{5}</script>
+
+<p>Esta es una ecuación no lineal y no es obvio que tenga soluciones no singulares a parte de las soluciones triviales <script type="math/tex">\phi=\pm v</script>. Usemos el recién aprendido <strong>principio de criticalidad simétrica</strong> para probar que de hecho si existen esta soluciones no triviales. Recordemos el principio brevemente</p>
+
+<p><br /></p>
+
+<blockquote>
+  <p><strong>Principio de criticalidad simétrica:</strong>  Sea <script type="math/tex">\phi</script> un campo genérico de algún lagrangiano y sea <script type="math/tex">S[\phi]</script> la acción de la teoría. Sobre la teoría actúa algún grupo de simetría que deja invariante a la acción. Sea <script type="math/tex">K</script> el conjunto de campos que son invariantes frente a la acción de este grupo. El principio nos dice que si <script type="math/tex">\phi_0\in K</script> es un punto estacionario de <script type="math/tex">S_K[\phi]</script> (la acción restringida a <script type="math/tex">K</script>) entonces automáticamente también es un punto estacionario de la acción total <script type="math/tex">S[\phi]</script>.</p>
+</blockquote>
+
+<p><br /></p>
+
+<p>En este caso, el grupo de simetría pertinente es <script type="math/tex">\{e,P\}</script>, donde <script type="math/tex">P</script> que actúa como</p>
+
+<script type="math/tex; mode=display">P\phi(x) = -\phi(-x). \label{eq:6} \tag{6}</script>
+
+<p>Ya dijimos al inicio que el lagrangiano (por consiguiente la acción) son invariantes frente a la acción de este grupo. Entonces, por el principio anterior podemos a restringirnoas a campos que satisfagan</p>
+
+<script type="math/tex; mode=display">\phi(x) = -\phi(-x). \label{eq:7} \tag{7}</script>
+
+<p>Basta con encontrar puntos estacionarios de <script type="math/tex">S_K[\phi]</script> que cumplan <script type="math/tex">\eqref{eq:7}</script>. Está claro, que de existir estas soluciones, estas no son triviales pues los valores de vacío no entran en <script type="math/tex">K</script>. Multiplicando <script type="math/tex">\eqref{eq:5}</script> por <script type="math/tex">\f{d\phi}{dx}</script> a ambos lados obtenemos la siguiente ecuación</p>
+
+<script type="math/tex; mode=display">\f{d}{dx}\bb{\f 12\bp{\f{d\phi}{dx}}^2-\f{\lambda}4(\phi^2-v^2)}=0 \label{eq:8} \tag{8}</script>
+
+<p>La cantidad entre corchetes es independiente de <script type="math/tex">x</script> y es fácil ver que debe ser cero cuando lo evaluamos en el infinito. Entonces,</p>
+
+<script type="math/tex; mode=display">\f{d\phi}{dx} = \pm\sqrt{\f\lambda 2}(\phi^2-v^2). \label{eq:9} \tag{9}</script>
+
+<p>Dependiendo de las condiciones de frontera en el infinito, podemos elegir el signo <script type="math/tex">+</script>  o <script type="math/tex">-</script>. De cualquier modo la solución a esta ecuación diferencial es</p>
+
+<script type="math/tex; mode=display">\phi(x) = v\tanh\bb{\f m{\sqrt 2}(x-x_0)}, \label{eq:10} \tag{10}</script>
+
+<p>donde <script type="math/tex">x_0</script> es una constante de integración. Si fijamos <script type="math/tex">x_0</script> es claro que la solución satisface <script type="math/tex">\eqref{eq:7}</script>. Esta solución se muestra en la <strong>Figura 1</strong> de abajo con <script type="math/tex">x_0=0</script>. Si hubiéramos elegido la solución negativa obtendríamos en <em>antikink</em></p>
+
+<script type="math/tex; mode=display">\phi(x) = -v\tanh\bb{\f m{\sqrt 2}(x-x_0)}, \label{eq:11} \tag{11}</script>
+
+<p><br /></p>
+<p>
+  <figure class="image">
+    <img src="/assets/images/kink/kink_graph.png" alt="La solución kink de ecuación (10)." />
+    <figcaption>La solución kink de ecuación (10).</figcaption>
+  </figure>
+</p>
+
+<p><br /></p>
+
+<p>La densidad de energía, mostrada en la <strong>Figura 2</strong>, es la misma tanto para el kink como para el antikink y está dada por</p>
+
+<script type="math/tex; mode=display">\mc E = \f{m^4}{2\lambda}sech^4\bp{\f{m}{\sqrt 2}x}. \label{eq:12} \tag{12}</script>
+
+<p>Está concentrada en una región de anchura <script type="math/tex">\sim m^{-1}</script> alrededor de <script type="math/tex">x_0=0</script>. Fuera de esta región el kink no es distinguible del vacío. Esta localización de la energía sugiere que interpretemos al kink como una *especie de partícula**.</p>
+
+<p><br /></p>
+<p>
+  <figure class="image">
+    <img src="/assets/images/kink/kink_energy.png" alt="Densidad de energía para el kink." />
+    <figcaption>Densidad de energía para el kink.</figcaption>
+  </figure>
+</p>
+
+<p><br /></p>
+
+<p>La masa de esta partícula está dada por la energía total de la solución estática, es decir,</p>
+
+<script type="math/tex; mode=display">M_{cl} = \f{m^4}{2\lambda}\int_{-\infty}^\infty sech^4\bp{\f{m}{\sqrt 2}x} dx = \f{2\sqrt 3}3 \f{m^3}{\lambda}. \label{eq:13} \tag{13}</script>
+
+<p>Si el kink será interpretado como una partícula, entonces también deberían existir soluciones correspondientes a kinks en movimiento. Obtenemos estas soluciones haciendo una transformación de Lorentz <script type="math/tex">x-x_0\ra \gm(x-x_0-ut)</script>. De esto se obtiene,</p>
+
+<script type="math/tex; mode=display">\phi(x,t) = v\tanh\bb{\f{m}{\sqrt 2}\f{(x-x_0-ut)}{\sqrt{1-u^2}}} \label{eq:14} \tag{14}</script>
+
+<p>Esto describe un kink en movimiento con velocidad <script type="math/tex">u</script>. La energía de esta solución,</p>
+
+<script type="math/tex; mode=display">E = \int dx\bb{\f 12\bp{\f{d\phi}{dt}}^2+\f 12\bp{\f{d\phi}{dx}}^2+V(\phi)} = \f{M_{cl}}{\sqrt{1-u^2}} \label{eq:15} \tag{15}</script>
+
+<p>Recordemos que el punto clave para que esta teoría tuviera un solitón es que el potencial tenga vacíos degenerados y que el campo tomara valores distintos en el infinito espacial. Esto establece una relación entre la topología de los vacíos y la topología de los campos en el infinito espacial. El resultado de esta relación es que los solitones son solitones topológicos. Podemos definir una corriente topológica</p>
+
+<script type="math/tex; mode=display">J^\mu_{top} =\f{1}{2v}\eps^{\mu\nu}\pr_\nu\phi, \label{eq:16} \tag{16}</script>
+
+<p>donde <script type="math/tex">\eps^{\mu\nu}=-\eps^{\mu\nu}</script> y <script type="math/tex">\eps^{01}=1</script>. La antisimetría de <script type="math/tex">\eps</script> garantiza que esta corriente tiene divergencia nula. La carga topológica asociada es</p>
+
+<script type="math/tex; mode=display">Q_{top} = \int_{-\infty}^\infty dx J^0 = \f 1{2v}\int_{-\infty}^\infty dx\pr_1\phi = \f 1{2v} [\phi(\infty)-\phi(-\infty)] = \pm 1</script>
+
+<p>Esta carga está conservada pero no está asociada a una simetría del lagrangiano, en contraste con el Teorema de Noether.</p>
+
+<p><br /></p>
+<hr />
+
+<p><br /></p>
+
+:ET
