@@ -181,7 +181,7 @@ $$
 
 $$ 
 
-Dependiendo de las condiciones de frontera en el infinito, podemos eleginr el signo $$+$$  o $$-$$. De cualquier modo la solución a esta ecuación diferencial es
+Dependiendo de las condiciones de frontera en el infinito, podemos elegir el signo $$+$$  o $$-$$. De cualquier modo la solución a esta ecuación diferencial es
 
 $$ 
 
@@ -189,7 +189,7 @@ $$
 
 $$ 
 
-donde $$x_0$$ es una constante de integración. Si fijamos $$x_0$$ es claro que la solución satisface $$\eqref{eq:7}$$. Esta solución se muestra en la **Figura 1** de abajo con $x_0=0$. Si hubieramos elegido la solución negativa obtendríamos en *antikink*
+donde $$x_0$$ es una constante de integración. Si fijamos $$x_0$$ es claro que la solución satisface $$\eqref{eq:7}$$. Esta solución se muestra en la **Figura 1** de abajo con $$x_0=0$$. Si hubiéramos elegido la solución negativa obtendríamos en *antikink*
 
 $$ 
 
@@ -210,7 +210,7 @@ $$
 
 $$ 
 
-Está concentrada en una región de anchura $$\sim m^{-1}$$ alrededor de $$x_0=0$$. Fuera de esta región el kink no es distinguible del vacío. Esta localización de la energía sugiere que interpretemos al kink como una *especie de partícula**.
+Está concentrada en una región de anchura $$\sim m^{-1}$$ alrededor de $$x_0=0$$. Fuera de esta región el kink no es distinguible del vacío. Esta localización de la energía sugiere que interpretemos al kink como una *especie de partícula*.
 
 <br>
 {% include image.html url="/assets/images/kink/kink_energy.png" description="Densidad de energía para el kink." 
@@ -262,6 +262,67 @@ Esta carga está conservada pero no está asociada a una simetría del lagrangia
 <br>
 <hr>
 <br>
+
+Estos métodos que vimos pueden ser aplicados al caso de un potencial arbitrario $$V(\phi)$$ con dos o más mínimos globales degenerados. En general,
+
+$$ 
+
+\f{d\phi}{dx} = \pm\sqrt{2V(\phi)} \label{eq:17} \tag{17} 
+
+$$ 
+
+Esta última ecuación nos permite derivar una **identidad virial**:
+
+$$ 
+
+\int_{-\infty}^\infty dx\bb{\f 12\bp{\f{d\phi}{dx}}^2} = \int_{-\infty}^\infty dx V(\phi) \label{eq:18} \tag{18} 
+
+$$ 
+
+Además, usando esta identidad virial uno puede derivar un cota inferior para la energía $$E$$ de cualquier configuración de campos en términos de información topológica (depende sólo de los valores en el infinito). Usemos la siguiente desigualdad
+
+$$ 
+
+\bp{\f 1{\sqrt 2}\phi'\pm\sqrt{V(\phi)}}^2\geq 0
+
+$$ 
+
+Expandiendo esta desigualdad e integrando en todo el espacio, obtenemos
+
+$$ 
+
+\int_{-\infty}^\infty\bp{\f 12\phi'+V(\phi)}dx\geq\pm\int_{-\infty}^\infty\sqrt{2V(\phi)}\phi'dx
+
+$$ 
+
+Por lo tanto, para campos estáticos
+
+$$ 
+
+E\geq\left\vert \int_{-\infty}^\infty\sqrt{2V(\phi)}\phi'dx\right\vert=\left\vert \int_{\phi_-}^{\phi^+}\sqrt{2V(\phi)}d\phi\right\vert .
+
+$$ 
+
+Podemos introducir un **superpotencial** $$W(\phi)$$ tal que $$V(\phi)=\f 12\bp{\f{dW}{d\phi}}^2$$, entonces tendríamos
+
+$$ 
+
+E\geq \vert W(\phi_+)-W(\phi_-)\vert \label{eq:19} \tag{19} 
+
+$$ 
+
+Este tipo de desigualdades se conocen como **desigualdades de Bogomolnyi**. Es claro que para que se llegue a la igualdad el campo debe ser estático $$\dot\phi=0$$ y satisfacer alguna de las llamadas **ecuaciones de Bogomolnyi**
+
+$$ 
+
+\phi' = \pm\sqrt{2V(\phi)} \label{eq:20} \tag{20} 
+
+$$
+
+
+
+
+
 
 
 
