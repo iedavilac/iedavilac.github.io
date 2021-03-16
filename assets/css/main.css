@@ -219,11 +219,80 @@ sup {
   position: relative;
   top: -0.5em; }
 
+/* Scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #121212;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #F23938;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #F22519;
+}
+
 blockquote {
-  border-left: solid 3px rgba(210, 215, 217, 0.75);
-  font-style: italic;
-  margin: 0 0 2em 0;
-  padding: 0.5em 0 0.5em 2em; }
+  color: var(--text-color);
+  border-left: 0.2rem solid var(--text-color);
+  border-right: 0.2rem solid var(--text-color);
+  border-top: 0.2rem solid var(--text-color);
+  border-bottom: 0.2rem solid var(--text-color);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: .6rem 0 .6rem 1.8rem;
+  text-align: left;
+  background: var(--background-color);
+
+  cite {
+    border-left: unset;
+    display: block;
+    text-align: left;
+    
+    &::before {
+      content: " — ";
+    }
+  }
+}
+
+figure {
+  counter-increment: figures;
+  img,
+  video {
+    display: block;
+    float: unset;
+    margin: auto;
+    width: 45%;
+  }
+
+  figcaption {
+    font-size: $small-font-size;
+    text-align: center;
+
+    &::before {
+      content: "Figura " counter(figures) ": ";
+    }
+  }
+}
+
+p {
+  &.post-date {
+    color: $grey;
+    font-style: italic;
+    text-align: right;
+  }
+}
 
 code {
   background: rgba(230, 235, 237, 0.25);
@@ -1477,7 +1546,8 @@ ul.pagination {
 
 table {
   margin: 0 0 2em 0;
-  width: 100%; }
+  width: 100%;
+  border:2px solid #ffffff; }
   table tbody tr {
     border: solid 1px rgba(210, 215, 217, 0.75);
     border-left: 0;
@@ -1485,21 +1555,23 @@ table {
     table tbody tr:nth-child(2n + 1) {
       background-color: rgba(230, 235, 237, 0.25); }
   table td {
-    padding: 0.75em 0.75em; }
+    padding: 0.75em 0.75em;
+	border:1px solid #ffffff;	}
   table th {
-    color: #3d4449;
+    color: #ffffff;
+	border:2px solid #ffffff;
     font-size: 0.9em;
     font-weight: 600;
     padding: 0 0.75em 0.75em 0.75em;
     text-align: left; }
   table thead {
-    border-bottom: solid 2px rgba(210, 215, 217, 0.75); }
+    border-bottom: solid 2px #ffffff; }
   table tfoot {
-    border-top: solid 2px rgba(210, 215, 217, 0.75); }
+    border-top: solid 2px #ffffff; }
   table.alt {
     border-collapse: separate; }
     table.alt tbody tr td {
-      border: solid 1px rgba(210, 215, 217, 0.75);
+      border: solid 1px #ffffff;
       border-left-width: 0;
       border-top-width: 0; }
       table.alt tbody tr td:first-child {
