@@ -1,50 +1,44 @@
-//Project Euler problema 4: Encuentre el palindromo mas grande
-//que es multiplicacion de dos numeros de 3 cifras.
-
+//----------------------------------------------------------------------------
+// Archivo: PEproblem4.c
+// Autor: Isai E. Davila Cuba
+//----------------------------------------------------------------------------
+// Problema 4 de Project Euler:
+// El problema pide encontrar el numero mas grande que sea palindromo resul-
+// tante de la multiplicacion de dos numeros de tres cifras.
+//----------------------------------------------------------------------------
 #include <stdio.h>
-#include <math.h>
 #include <stdlib.h>
-#include <string.h>
 
-#define NELEMS(x)  (sizeof(x) / sizeof((x)[0]))
-
-int palindromo(int nro)
+int chk_palindrome(int num_act)
 {
-    char n[12],a[12];
-    int m;
-    sprintf(n,"%d",nro);
+	int resto,reversed=0,n_temp;
 
-    strcpy(a,n);
-    strrev(a);
-    if(strcmp(n,a)==0) m=0;
-    else m=1;
-    return m;
+	n_temp = num_act;
+
+	while(n_temp != 0){
+		resto = n_temp % 10;
+		reversed = reversed*10+resto;
+		n_temp /= 10;
+	}
+	if (num_act == reversed) return 0;
+	else return 1;
 }
 
 main()
 {
-    int a,b,i,n;
-    int v[3];
-    int m;
+	int i,j,n,numero_actual,x,itemp,jtemp,ans=0;
+	int palindromes[3000];
 
-    printf("Ingrese el numero de cifras: ");
-    scanf("%d",&n);
-
-
-    for(a=pow(10,n-1);a<pow(10,n);a++)
-        for(b=pow(10,n-1);b<pow(10,n);b++)
-        {
-            if(a!=b) m=a*b;
-            //printf("%d\n",m);
-            if(palindromo(m)==0)
-            {
-                v[0]=a;
-                v[1]=b;
-                v[2]=m;
-            }
-        }
-    printf("\n El mayor palindromo que se forma del producto de dos numeros de %d cifras es: \n",n);
-    printf("%d x %d = %d\n",v[0],v[1],v[2]);
-
-
+	for(i=100;i<=999;i++)
+	{
+		for(j=100;j<=999;j++){
+			numero_actual = i*j;
+			if(chk_palindrome(numero_actual)==0 && numero_actual>ans){
+				//printf("%d\n",numero_actual);
+				ans = numero_actual;
+				//printf("%d\n",k);
+			}
+		}
+	}
+	printf("%d",ans);
 }
