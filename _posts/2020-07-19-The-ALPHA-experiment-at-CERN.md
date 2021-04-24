@@ -3,15 +3,16 @@ layout: default2
 title: "The ALPHA experiment at CERN"
 date: 2020-07-19
 excerpt: We review how to find the solution for the electromagnetic four-potential in the Lorentz gauge.
-tags: [physics] 
+tags: [physics]
+image: /assets/images/alpha/AlphaCollaboration_0.png
 ---
 
 <br>
-{% include image.html url="/assets/images/alpha/AlphaCollaboration_0.png" 
+{% include image.html url="/assets/images/alpha/AlphaCollaboration_0.png"
   description="Logo de la colaboración ALPHA" %}
-  
+
 <br>
-  
+
 
 
 El miércoles pasado realicé una exposición junto a Tomás Perez sobre un experimento que se lleva a cabo en el [CERN](https://home.cern/) llamado [ALPHA](http://alpha.web.cern.ch/) (*Antihydrogen Laser Physics Apparatus*). Este experimento se dedica a investigar la antimateria. Más concretamente, ALPHA busca estudiar la estructura interna del $$\bar{H}$$ (símbolo del antihidrógeno) y buscar confirmación de la simetría CPT (*charge conjugation,parity transformation and time reversal*) predicha por la Teoría Cuántica de Campos.
@@ -43,7 +44,7 @@ Bueno, ahora pasemos de lleno a explicar las distintas partes que componen ALPHA
 Es bien sabido que un campo magnético puede generar un desdoblamiento de los niveles atómicos de Hidrógeno ([Efecto Zeeman](https://en.wikipedia.org/wiki/Zeeman_effect) ). Por ejemplo, miremos el caso del desdoblamiento de la transición 1S-2S en $$\bar{H}$$. Esto se puede ver en la siguiente figura:
 
 <br>
-{% include image.html url="/assets/images/alpha/1s-2s-desdoblamiento.png" description="Desdoblamiento de los niveles 1S y 2S para el Antihidrógeno." 
+{% include image.html url="/assets/images/alpha/1s-2s-desdoblamiento.png" description="Desdoblamiento de los niveles 1S y 2S para el Antihidrógeno."
   %}
 <br>
 
@@ -52,12 +53,12 @@ En el eje x se muestra la intensidad del campo magnético $$B$$ y en el eje y se
 
 <br>
 
-Para explicar por qué los estados $$c,d$$ siguen una "recta" ֍ <small class="sidenote">Se puede ver que el comportamiento es no lineal cuando el campo magnético no es muy intenso, pero para campos muy intensos ,como los usados en ALPHA ,el comportamiento es *casi lineal*.</small>  con pendiente positiva y los estados $$a,b$$ 
+Para explicar por qué los estados $$c,d$$ siguen una "recta" ֍ <small class="sidenote">Se puede ver que el comportamiento es no lineal cuando el campo magnético no es muy intenso, pero para campos muy intensos ,como los usados en ALPHA ,el comportamiento es *casi lineal*.</small>  con pendiente positiva y los estados $$a,b$$
  una con pendiente negativa podemos dar un modelo **muy simplificado** acerca de como es el Hamiltoniano del sistema:
 
-$$ 
+$$
 
-H = H_{1S}-\vec{\mu}\cdot\vec{B} \label{eq:1} \tag{1} 
+H = H_{1S}-\vec{\mu}\cdot\vec{B} \label{eq:1} \tag{1}
 
 $$
 
@@ -85,7 +86,7 @@ En presencia de un campo magnético estos subniveles se separan en dos transicio
 
 <br>
 
-Para estimular dichas transiciones, es decir, energizar los positrones para que suban al nivel 2S se ilumina a los átomos de $$\bar{H}$$ con un láser con una frecuencia ajustada a la mitad de la correspondiente frecuencia de transición. Dos fotones que inciden de manera opuesta excitan al átomo produciendo un fenómeno conocido como *two photon absorption*. 
+Para estimular dichas transiciones, es decir, energizar los positrones para que suban al nivel 2S se ilumina a los átomos de $$\bar{H}$$ con un láser con una frecuencia ajustada a la mitad de la correspondiente frecuencia de transición. Dos fotones que inciden de manera opuesta excitan al átomo produciendo un fenómeno conocido como *two photon absorption*.
 
 <br>
 
@@ -100,20 +101,16 @@ Una vez que el átomo queda excitado en el nivel 2S pueden ocurrir tres cosas: e
   %}
 <br>
 
-Como se muestra en la figura, las componenentes principales de ALPHA son : una fuente de antiprotones llamada *desacelerador de antiprotones* (AD), una fuente de positrones llamada *acumulador de positrones*, una trampa magnética compuesta de *bobinas espejo* (en verde) y un *octupolo* (en rojo), una trampa eléctrica compuesta de electrodos llamada *trampa de Penning-Malmberg* (en amarillo) y un detector que rodea al aparato llamado *silicon vertex detector* (SVD). 
+Como se muestra en la figura, las componenentes principales de ALPHA son : una fuente de antiprotones llamada *desacelerador de antiprotones* (AD), una fuente de positrones llamada *acumulador de positrones*, una trampa magnética compuesta de *bobinas espejo* (en verde) y un *octupolo* (en rojo), una trampa eléctrica compuesta de electrodos llamada *trampa de Penning-Malmberg* (en amarillo) y un detector que rodea al aparato llamado *silicon vertex detector* (SVD).
 
 <br>
 
 ### Desacelerador de Antiprotones
 
 <br>
-{% include image.html url="/assets/images/alpha/AD.jpg" description="Instalaciones del Desacelerador de Antiprotones (AD) en el CERN." 
+{% include image.html url="/assets/images/alpha/AD.jpg" description="Instalaciones del Desacelerador de Antiprotones (AD) en el CERN."
   %}
 <br>
 
 El Desacelerador de Antiprotones produce antiprotones de baja energía, llamados <<fríos>>.
-Los protones, producidos en el Sincrotón de Protones (CERN), son hechos colisionar con un bloque de metal produciendo partículas secundarias, entre ellas antiprotones. Sin embargo, la energía de estos antiprotones es muy alta para ser usados en experimentos de antimateria. Entonces el trabajo de AD es enfriar estos antiprotones y enviarlos a los distintos experimentos. 
-
-  
-  
-
+Los protones, producidos en el Sincrotón de Protones (CERN), son hechos colisionar con un bloque de metal produciendo partículas secundarias, entre ellas antiprotones. Sin embargo, la energía de estos antiprotones es muy alta para ser usados en experimentos de antimateria. Entonces el trabajo de AD es enfriar estos antiprotones y enviarlos a los distintos experimentos.
