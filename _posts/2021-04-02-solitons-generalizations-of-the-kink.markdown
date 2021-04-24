@@ -3,11 +3,11 @@ layout: default2
 title: 'Solitons: Generalizations of the kink'
 date: '2021-04-02 20:48'
 excerpt: >-
-  In this post we talk about the most basic soliton, the kink. We review some of
-  its properties and the conserved topological charge.
+  We give a brief discussion about domain wall junctures. This arise as a consecuence of the potencial of having more than two degenerate minima. We also treat the Bogomolny equations for this problem.
 tags:
   - physics
   - math
+image: /assets/images/kink3/domain_wall.png
 ---
 
 $$
