@@ -4,7 +4,7 @@ title: "Closed Subsets and Bases for a Topology"
 date: 2020-06-17
 excerpt: In this second post about topology we introduce the concept of closed subsets and bases for a topology.
 tags: [math]
-
+image: /assets/images/closed_subsets/example_1.png
 ---
 
 ## Subconjuntos cerrados
@@ -27,11 +27,11 @@ Ahora, introduciremos el concepto de **clausura** de un subconjunto:
 > $$
 > \bar A = \bigcap\{F\subseteq X: F \text{ es cerrado y } A\subseteq F \} \tag{1}
 > $$
-> 
+>
 
 <br>
 
-A los puntos que pertenecen a la clausura de un conjunto se les llaman **punto límite** . 
+A los puntos que pertenecen a la clausura de un conjunto se les llaman **punto límite** .
 
 Ahora veremos algunas propiedades de la clausura de un conjunto:
 
@@ -45,13 +45,13 @@ Ahora veremos algunas propiedades de la clausura de un conjunto:
 
 4. **$$\bar (\bar A) = \bar A$$**.
 
-5. **$$\bar A$$ es el *menor* cerrado que contiene a $$A$$.** 
+5. **$$\bar A$$ es el *menor* cerrado que contiene a $$A$$.**
 
 6. **\bar{A\cup B} = \bar A\cup\bar B.**
 
-   
-  
-   ​		
+
+
+   ​
 
 <br>
 
@@ -68,7 +68,7 @@ Comenzamos definiendo una base:
 > <br>
 >
 > 1. Para cada elemento $$x\in X$$ existe siempre un elemento de la base $$B\in\mathscr{B}$$ tal que $$x\in B$$.
-> 2. Si $$x$$ pertenece a la intersección de dos elementos de la base $$B_1\cap B_2$$ siempre existe otro elemento $$B_3\subset B_1\cap B_2$$ que contiene a $$x$$. 
+> 2. Si $$x$$ pertenece a la intersección de dos elementos de la base $$B_1\cap B_2$$ siempre existe otro elemento $$B_3\subset B_1\cap B_2$$ que contiene a $$x$$.
 
 <br>
 
@@ -80,11 +80,11 @@ Decimos que un subconjunto $$U\subset X$$ es abierto (es decir que $$U$$ es un e
 
 De esto podemos razonar fácilmente que todo elemento de la base $$\mathscr{B}$$ es un elemento de la topología $$\tau$$.
 
- 
 
-Ahora veamos algunos ejemplos de bases.  
 
-<br> 
+Ahora veamos algunos ejemplos de bases.
+
+<br>
 
 > <b> Ejemplo 1 </b> . Sea $$\mathscr{B}$$ la familia de regiones circulares en el plano. Se puede comprobar que cumple ambas condiciones de base. En la imagen se muestra la comprobación de la segunda propiedad.
 
@@ -94,12 +94,12 @@ Ahora veamos algunos ejemplos de bases.
 
 <br>
 
-{% include image.html url="/assets/images/closed_subsets/example_1.png" 
+{% include image.html url="/assets/images/closed_subsets/example_1.png"
   %}
 
 <br>
 
-Hasta ahora no verificamos que efectivamente $$\tau$$ es una topología. 
+Hasta ahora no verificamos que efectivamente $$\tau$$ es una topología.
 
 Recordemos que para que una familia de conjuntos sea una topología se debían de cumplir 3 condiciones:
 
@@ -145,7 +145,7 @@ $$\therefore$$ $$\tau$$ generado por $$\mathscr{B}$$ es una topología. !!
 
 <br>
 
-<hr> 
+<hr>
 
 <br>
 
