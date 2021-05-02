@@ -36,11 +36,11 @@ Su visión es
 
 <br>
 
-Mirar los artículos y definciones en la página web es completamente gratis, sin embargo, tiene anuncios que aparecen de vez en cuando a la derecha del texto. A mi parecer, no es algo molesto, pero si de verdad te molesta puedes comprar una membresía. Las donaciones también son bienvenidas por su puesto. Al ser una organización sin ánimos de lucro todas las donaciones y membresías se usan para el mantenimiento de la página, propaganda, etc. Puedes ver en que se gasta el dinero de las donaciones en [Annual Report](https://worldhistory.org/static/reports/).
+Mirar los artículos y definciones en la página web es completamente gratis, sin embargo, tiene anuncios que aparecen de vez en cuando a la derecha del texto. A mi parecer, no es algo molesto, pero si de verdad te molesta puedes comprar una membresía. Las donaciones también son bienvenidas por su puesto. Al ser una organización sin ánimos de lucro todas las donaciones y membresías se usan para el mantenimiento de la página, propaganda, etc. Puedes ver en que se gasta el dinero de las donaciones en el [Annual Report](https://worldhistory.org/static/reports/).
 
 <br>
 
-Otra de las formas en que puedes contribuir a la página es escribiendo artículos y traduciendo a tu idioma natal. De hecho, hoy pude hacer justamente eso. Traduje un artículo justamente sobre el Aulós, que fue un instrumento musical que se usó mucho en la Antigua Grecia. Aún no está publicado porque debe pasar por revisión. Cuando lo publiquen actualizaré esta página para adjuntar el link.
+Otra de las formas en que puedes contribuir a la página es escribiendo artículos y traduciendo a tu idioma natal. De hecho, hoy pude hacer justamente eso. Traduje un artículo sobre el Aulós, que fue un instrumento musical que se usó mucho en la Antigua Grecia. Aún no está publicado porque debe pasar por revisión. Cuando lo publiquen actualizaré esta página para adjuntar el [link](https://worldhistory.org/trans/es/1-10992/aulos/).
 
 <br>
 <hr>
@@ -61,7 +61,7 @@ El aulós fue un instrumento musical de viento usado por los Griegos antiguos. T
 
 <br>
 
-En general, el aulós estaba hecho de caña, marfil, huesos y a veces con metales como el cobre y el bronce. El tubo circular o pipa, en griego *bombyke*, estaba equipado con una, dos o tres boquillas en forma de bulbo que daban al instrumento un tono diferente. La pipa podía estar compuesta de hasta cinco secciones entrelazadas. Para producir sonido el intérprete o también llamado *auleta* soplaba en la boquilla, haciendo vibrar la lengüeta (llamada *glottides*), que podía ser simple o doble. Siete agujeros (llamdos *tremata*) eran hechos a los largo de la pipa, con un agujero adicional para producir una octava de notas adicional. La tonalidad se podía ajustar girando los anicllos de bronce entre la boquilla y la pipa.
+En general, el aulós estaba hecho de caña, marfil, huesos y a veces con metales como el cobre y el bronce. El tubo circular o pipa, en griego *bombyke*, estaba equipado con una, dos o tres boquillas en forma de bulbo que daban al instrumento un tono diferente. La pipa podía estar compuesta de hasta cinco secciones entrelazadas. Para producir sonido el intérprete o también llamado *auleta* soplaba en la boquilla, haciendo vibrar la lengüeta (llamada *glottides*), que podía ser simple o doble. Siete agujeros (llamados *tremata*) eran hechos a los largo de la pipa, con un agujero adicional para producir una octava de notas adicional. La tonalidad se podía ajustar girando los anicllos de bronce entre la boquilla y la pipa.
 
 <br>
 
