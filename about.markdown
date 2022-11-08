@@ -5,7 +5,7 @@ layout: default
 
 ## About
 
-El propósito de este blog es mantener un archivo de temas de Física, Matemáticas , Idiomas e Historia que vaya aprendiendo durante los años. Muchos dicen que la mejor forma de aprender es enseñar a otros o pretender enseñar. Mi caso es este último, así que intento escribir como entiendo cada tema y como alguien (tal vez otro estudiante) podría entenderlo o llevarse la idea principal a casa. Mi estilo de escritura se resume en una de mis frases favoritas
+The purpose of this blog is to have an archive of topics in Physics, Mathematics, Language learning and History that I will be learning along the years.  Some say that the best way to learn is to teach, I also share that vision. Although I am not a professor I always write in the spirit of teaching to someone else just in case someone find this webpage on the internet. The followimg quote by Mark Twain captures the essence of this blog and my writing style
 
 > *“Write what you know.”*
 >
@@ -13,19 +13,16 @@ El propósito de este blog es mantener un archivo de temas de Física, Matemáti
 
 <br>
 
-Más bien, podría modificar esta frase a
-
-> *“Write what you know. Or what you want to know.”*
->
-> The author of the blog.
+I also post some of my work here.
 
 <br>
 
-## About the Author
 
-Mi nombre es Isaí E. Dávila Cuba, soy estudiante de física, amante de los idiomas , las matemáticas y la programación, y aficionado a la historia peruano-argentino.  Con mucho (muchísimo) esfuerzo armé esta página web como un proyecto personal.
+## About me
 
-Mis intereses académicos actualmente son **Solitones Topológicos**, **Gravedad Cuántica** y **Aspectos de Geometría Diferencial en Física: sistemas integrables**. Actualmente me encuentro cursando el último año de mi carrera y me encuentro realizando mi tesis sobre Vórtices en el modelo abeliano de Higgs. Mi director de tesis es [Diego Correa](https://scholar.google.com/citations?user=5cLCy9UAAAAJ&hl=es).
+My name is Isai E. Dávila Cuba, and I am a physicist and currently a High Energy Physics student at ICTP in Trieste, Italy. My current academic interests are the study of topological solitons in the Chern-Simons-Higgs theory, mathematical aspects of String Theory and QFT. In recent times I have found a very keen interest in pure mathematics, and I started reading standard math books in order to someday apply this knowledge to physics problems.
+
+Since this is my personal webpage, I will also list my non-academic interests: language learning (currently japanese and italian), history and programming (specially programming related to game making).
 
 <br>
 
